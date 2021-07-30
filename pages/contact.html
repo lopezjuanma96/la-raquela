@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Raquela | Contacto</title>
+    <link href="../imgs/page-logo.png" rel="icon">
+    <link href="../css/general-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Contacto La Raquela</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div><a href="../index.html"><b>Home</b></a></div>
+        <div><a href="gallery.html">Galería</a></div>
+        <div><a href="calendar.html">Calendario</a></div>
+        <div><a href="shop.html">Tienda</a></div>
+        <div><a href="info.html">Nosotros</a></div>
+        <div class="nav__choice"><a href="contact.html">Contactanos</a></div>
+    </nav>
+
+    <section>
+        <h3 class="section__title">Contactanos a través de cualquiera de estos medios</h3>
+        <table id="contact-table">
+            <tr>
+                <td><img class="section__contactImg" src="../imgs/phone-logo.png" alt="phone" width="20px">
+                    <b>Teléfono</b></br>+458816221992</td>
+                <td><img class="section__contactImg" src="../imgs/mail-logo.png" alt="phone" width="20px">
+                    <b>Correo electrónico</b></br>la.raquela@gmail.com</td>
+            </tr>
+            <tr>
+                <td><img class="section__contactImg" src="../imgs/ig-logo.png" alt="phone" width="20px">
+                    <b>Instagram</b></br>instagram.com/laraquela_</td>
+                <td><img class="section__contactImg" src="../imgs/fb-logo.png" alt="phone" width="20px">
+                    <b>Facebook</b></br>facebook.com/laraquela_</td>
+            </tr>
+            <tr>
+                <td><img class="section__contactImg" src="../imgs/web-logo.png" alt="phone" width="20px">
+                    <b>Sitio Web</b></br>http://www.la-raquela.com.ar/</td>
+            </tr>
+        </table>
+    </section>
+
+    <form action="forms/opinion.php" method="GET" enctype="application/x-www-form-urlencoded" id="visit-form"> 
+        <!-- ESTO ES MAS DE JAVASCRIPT--> 
+        <!--action:cuál es el archivo que recibe y procesa los datos, si no se escribe nada y se usa el método get, recarga la pagina con las respuestas en la URL, si se escribe donde se quiere guardar creo que no se guarda automatico porque necesita codigo en JS--> 
+        <!--method:Forma en la que se recopilan y envían los datos, metodos comunes get(defecto) lo pasa en la url y post lo guarda en privado--> 
+        <!--enctype:cómo se codifica el formulario-->
+
+        <fieldset> <!--Tag para subdividir el form-->
+            <legend>Datos Personales</legend> <!--Leyenda de esa sección-->
+            <h4> Ya estuviste en La Raquela? Dejanos tu comentario</h4> <!--No se si es correcto poner h6 dentro del form-->
+            <label for="nombre-apellido">Nombre:</label> <!--objetos inline similares a spans, pero que por buenas practicas y por sus atributos son adecuados para los forms-->
+            <input type="text" name="apellido" placeholder="Nombre Apellido"><br/> <!--otro tipo es password que te pone lo que ingreses con ****-->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Tu Opinión</legend>
+            <label for="comentario">¿Qué te pareció La Raquela?</label><br/>
+            <textarea rows="4" cols="30" name="comentarios"></textarea> <br/>
+            <label for="pregunta-dias-estadia">¿Cuántos días estuviste?</label>
+            <select name="dias-estadia">
+                <option value="none"></option>
+                <option value="1">1 día</option>
+                <option value="2">2 días</option>
+                <option value="3">3 días o más</option>
+                <option value="7">Una semana o más</option>
+                <option value="15">Dos semanas o más</option>
+            </select>
+            <label for="pregunta-volver">¿Volverías a visitarnos?</label>
+            <label for="preguntaVolverSi" id="preguntaVolverSi">Sí:</label><!--los radiobuttton no tienen label o nombre asociado como los botones, se requiere un label-->
+            <input type="radio" name="pregunta-volver" value="y" id="respuestaVolverSi"> <!--se podría hacer con u checkbox y usar radiobutton en algo más específico-->
+            <label for="preguntaVolverNo" id="preguntaVolverNo">No:</label>
+            <input type="radio" name="pregunta-volver" value="n" id="respuestaVolverNo">
+        </fieldset>
+        
+        <input type="submit" name="enviar" value="Enviar"> <!--los values de los inputs son los valores que se retornan al usarlos/seleccionarlos, y aparentemente tambien el nombre que tienen los botones-->
+        <input type="reset" name="reset" value="Limpiar"><br/> <!--Al estar adentro de un formulario, un imput tipo reset limpia todos los campos de ese form, también existen inputs tipo "button" que no tienen accion predeterminada-->
+    </form>
+
+    <footer>
+        <iframe src="footer.html"></iframe>
+    </footer>
+</body>
+</html>
