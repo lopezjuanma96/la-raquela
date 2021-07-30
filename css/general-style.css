@@ -1,0 +1,121 @@
+/* TAGS  | -------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+}
+
+footer {
+    width: 100%;
+    height:15vh;
+}
+
+nav {
+    width:100%;
+}
+
+/* CLS | -----------------------------*/
+
+.headerBlock{
+    background-color: rgb(5, 138, 5);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: rgb(7, 88, 7);
+    display: grid;
+    grid-template-columns: 5fr 20fr 20fr 52fr;
+    grid-template-rows: 50fr 40fr;
+    row-gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.headerBlock__title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.headerBlock__navigation{
+    display: inline-block;
+    grid-column: 2/4;
+    grid-row: 2;
+    width: fit-content;
+}
+
+.headerBlock__navigation__element{
+    background-color: white;
+    font-size: 100%;
+    color: black;
+    padding: 2px;
+    border: 1px solid rgb(46, 45, 45);
+    display: inline-block;
+}
+
+.headerBlock__navigation__element--choice{
+    font-weight: bolder;
+    font-size: 120%;
+    padding: 5px;
+}
+
+.footerBlock{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(5, 138, 5);
+    width:100%;
+    height: 100%;
+}
+
+.footerBlock__location{
+    display: grid;
+    grid-template-columns: 20fr 70fr;
+    grid-template-rows: 10fr 20fr 10fr 10fr;
+    gap: 2px;
+    width: 30%;
+}
+
+.footerBlock__location__image{
+    grid-column: 1;
+    grid-row: 1/5;
+    width: 100%;
+}
+
+.footerBlock__location__hereText{
+    grid-column: 2;
+    grid-row: 2;
+    color: whitesmoke;
+    width: 75%;
+}
+
+.footerBlock__location__addressText{
+    grid-column: 2;
+    grid-row: 3;
+    color: black;
+    width: 70%;
+}
+
+.footerBlock__location__addressText--clarify{
+    grid-column: 2;
+    grid-row: 4;
+    text-justify: auto;
+}
+
+/* HOME | --------------------------------*/
+
+
+
