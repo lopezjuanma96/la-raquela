@@ -574,7 +574,6 @@ nav {
 
 .contactBlock{
     display: grid;
-    background-color: red;
     grid-template-rows: 24px 40fr;
     width: 98%;
     height: 92%;
@@ -595,7 +594,6 @@ nav {
 .contactBlock__grid{
     grid-row: 2;
     display: grid;
-    background-color: blue;
     grid-template-columns: 40fr 40fr;
     grid-template-rows: 30fr 30fr 30fr;
     width: 99%;
@@ -616,8 +614,9 @@ nav {
 
 .contactBlock__gridElement__icon{
     grid-column: 1;
-    height: 100%;
-    width: 100%;
+    width: 40%;
+    margin-top: 6%;
+    margin-left: 24%;
 }
 
 .contactBlock__gridElement__text{
