@@ -137,94 +137,12 @@
     margin-top: 5%;
 }
 
-.homeContentBlock__calendarBlock__calendarObject{
+.homeContentBlock__calendarBlock__content{
     grid-row: 2;
     width: 96%;
     height: 100%;
     margin: 2%;
 }
-
-/*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
-
-.homeContentBlock__calendarBlock__calendarObject__month {
-    padding: 5% 6%;
-    width: 98%;
-    background-image: url("../imgs/winter_cabin.png"); /*HERE: esto podría cambiar mes a mes con JS*/
-    text-align: center;
-    margin: 0% 1%;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__month__name {
-    color: white;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: min(4vw, 3em);
-    text-transform: uppercase;
-    letter-spacing: 2%;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__month__prev {
-    color: white;
-    float: left;
-    font-size: min(2vw, 2em);
-    padding-top: 10%;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__month__next {
-    color: white;
-    float: right;
-    font-size: min(2vw, 2em);
-    padding-top: 10%;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks{
-    margin: 1% 0% 0% 0%
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays {
-    padding: 1% 0;
-    background-color: white;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays ul {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays li {
-    width: 13%;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-    justify-self: center;
-    list-style-type: none;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__days {
-    padding: 1% 0% 4% 0%;
-    background-color: wheat;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__days ul {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 3%;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__days li {
-    width: 13%;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-    justify-self: center;
-    list-style-type: none;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__weeks__days--choice {
-    padding: 1%;
-    background: lightgreen;
-    color: white
-}
-
-/*End of example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
 
 .homeContentBlock__calendarBlock__contactBubble{
     grid-row: 3;
@@ -305,21 +223,6 @@
     .homeContentBlock__calendarBlock__title{
         right: 1%;
         margin-top: 1%;
-    }
-
-    .homeContentBlock__calendarBlock__calendarObject__month__prev {
-        font-size: min(4vw, 3em);
-        padding-top: 3%;
-    }
-    
-    .homeContentBlock__calendarBlock__calendarObject__month__next {
-        font-size: min(4vw, 3em);
-        padding-top: 3%;
-    }
-
-    .homeContentBlock__calendarBlock__calendarObject__weeks__days {
-        padding: 1% 0% 2% 0%;
-        background-color: white;
     }
 
     .homeContentBlock__calendarBlock__contactBubble{

@@ -171,3 +171,104 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+
+/*CalendarObject*/
+
+/*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
+
+.calendarObject__month {
+    padding: 5% 6%;
+    width: 98%;
+    background-image: url("../imgs/winter_cabin.png"); /*HERE: esto podría cambiar mes a mes con JS*/
+    background-size: cover;
+    text-align: center;
+    margin: 0% 1%;
+}
+
+.calendarObject__month__name {
+    color: white;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: min(4vw, 3em);
+    text-transform: uppercase;
+    letter-spacing: 2%;
+}
+
+.calendarObject__month__prev {
+    color: white;
+    float: left;
+    font-size: min(2vw, 2em);
+    padding-top: 10%;
+}
+
+.calendarObject__month__next {
+    color: white;
+    float: right;
+    font-size: min(2vw, 2em);
+    padding-top: 10%;
+}
+
+.calendarObject__weeks{
+    margin: 1% 0% 0% 0%
+}
+
+.calendarObject__weeks__weekdays {
+    padding: 1% 0;
+    background-color: white;
+}
+
+.calendarObject__weeks__weekdays ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendarObject__weeks__weekdays li {
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    justify-self: center;
+    list-style-type: none;
+}
+
+.calendarObject__weeks__days {
+    padding: 1% 0% 4% 0%;
+    background-color: wheat;
+}
+
+.calendarObject__weeks__days ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 3%;
+}
+
+.calendarObject__weeks__days li {
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    justify-self: center;
+    list-style-type: none;
+}
+
+.calendarObject__weeks__days--choice {
+    padding: 1%;
+    background: lightgreen;
+    color: white
+}
+
+@media screen and (max-width: 1280px){
+    .calendarObject__month__prev {
+        font-size: min(4vw, 3em);
+        padding-top: 3%;
+    }
+    
+    .calendarObject__month__next {
+        font-size: min(4vw, 3em);
+        padding-top: 3%;
+    }
+
+    .calendarObject__weeks__days {
+        padding: 1% 0% 2% 0%;
+        background-color: white;
+    }
+}
+/*End of example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
