@@ -201,9 +201,9 @@ footer {
 .homeContentBlock__newsSection{
     grid-row: 2;
     display: grid;
-    grid-template-rows: 1fr 11fr;
+    grid-template-rows: 1fr 7fr;
     width: 92%;
-    height: 57%;
+    height: 92%;
     margin: 4%;
 }
 
@@ -225,10 +225,11 @@ footer {
 .homeContentBlock__newsSection__content{
     grid-row: 2;
     background-color: white;
+
     padding: 2px 4px;
 }
 
-.homeContentBlock__newsSection__content{
+.homeContentBlock__newsSection__contentText{
     font-family: 'Ubuntu', sans-serif;
     color: black;
 }
@@ -236,7 +237,7 @@ footer {
 .homeContentBlock__reelBlock{
     display: inline-grid;
     align-self: center;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: min(2vw, 1.3em) 1fr;
     width: 30%;
     height: 30%;
     margin: 1%;
@@ -250,7 +251,7 @@ footer {
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: x-large;
+    font-size: min(2vw, 1.3em);
     width: fit-content;
     height: fit-content;
     padding: 3px 7px;
@@ -271,12 +272,11 @@ footer {
 .homeContentBlock__reelBlock__reelIcon{
     grid-row: 2;
     grid-column: 1;
-    position: relative;
-    left: 80%;
-    top: 40%;
+    align-self: flex-end;
+    justify-self: flex-end; /*HERE: No se como hacer que quede responsive siempre en la misma posición*/
     z-index: 1;
     width: 20%;
-    height: 100%;
+    height: fit-content;
 }
 
 .homeContentBlock__calendarBlock{ /*Si esto se va a poner en todas las paginas se podría generalizar*/
@@ -333,7 +333,7 @@ footer {
     }
 
     .homeContentBlock__newsBlock{
-        display: block;
+        display: block f;
         width: 100%;
         margin: 2%;
     }
@@ -343,18 +343,21 @@ footer {
     }
 
     .homeContentBlock__newsSection{
-        grid-template-rows: 1fr 4fr;
         width: 88%;
         margin: 1% 6% 2% 6%;
     }
 
     .homeContentBlock__reelBlock{
-        display: block;
-
+        width: 40%;
+        height: 30%;
     }
 
+    .homeContentBlock__reelBlock__reelTitle{
+        right: 10%;
+        top: 50%;
+    }
+    
     .homeContentBlock__calendarBlock{
-        display: block;
         width: 100%;
         height: 30%;
     }
