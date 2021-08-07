@@ -1,0 +1,64 @@
+/* CONTACT | ----------------------*/
+
+.contactBlock{
+    display: grid;
+    grid-template-rows: 24px 40fr;
+    width: 98%;
+    height: 92%;
+    margin: 1%;
+}
+
+.contactBlock__title{
+    grid-row: 1;
+    position: relative;
+    background-color: green;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.contactBlock__grid{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 40fr 40fr;
+    grid-template-rows: 30fr 30fr 30fr;
+    width: 99%;
+    height: 92%;
+    margin: 1% 0.5%;
+}
+
+.contactBlock__gridElement{
+    display: grid;
+    background-color: gray;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    height: 94%;
+    width: 98%;
+    grid-template-columns: 20fr 70fr;
+    margin: 0.5% 1%;
+}
+
+.contactBlock__gridElement__icon{
+    grid-column: 1;
+    width: 40%;
+    margin-top: 6%;
+    margin-left: 24%;
+}
+
+.contactBlock__gridElement__text{
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black
+}
+
+.contactBlock__gridElement__text--title{
+    font-size:medium;
+}
+
+.contactBlock__gridElement__text--content{
+    font-size: small;
+}

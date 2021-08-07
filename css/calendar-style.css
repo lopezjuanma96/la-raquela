@@ -1,0 +1,55 @@
+/* CALENDAR | ----------------------*/
+
+.calendarBlock{
+    background-color: khaki;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    width: 98%;
+    height: 92%;
+    margin: 1%;
+}
+
+.calendarBlock__title{
+    grid-row: 1;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Lobster', cursive;
+    position:relative;
+    top: 15%;
+    right: 1%;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 7px;
+}
+
+.calendarBlock__contentBlock{
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.calendarBlock__contentBlock__monthChoice{
+    display: block;
+}
+
+.calendarBlock__contentBlock__monthGrid{
+    width: 100%;
+    height: 80%;
+    padding: 0 3% 3% 3%;
+}
+
+.calendarBlock__contentBlock__monthGrid table{
+    width: 100%;
+}
+
+.calendarBlock__contentBlock__monthGrid th{
+    background-color: gray;
+    color: white;
+    width: 12%;
+}
+
+.calendarBlock__contentBlock__monthGrid tr{
+    background-color: white;
+    color: white;
+    width: 12%;
+}
