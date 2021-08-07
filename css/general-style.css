@@ -289,7 +289,7 @@ footer {
     margin: 1%;
 }
 
-.homeContentBlock__calendarBlock__Title{
+.homeContentBlock__calendarBlock__title{
     grid-row: 1;
     position: relative;
     right: 6%;
@@ -303,29 +303,80 @@ footer {
     margin-top: 5%;
 }
 
-.homeContentBlock__calendarBlock__calendar{
+.homeContentBlock__calendarBlock__calendarObject{
     grid-row: 2;
     width: 96%;
     height: 50%;
     margin: 2%;
 }
 
-.homeContentBlock__calendarBlock__calendar tr{
+/*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
+
+.homeContentBlock__calendarBlock__calendarObject__month {
+    padding: 70px 25px;
     width: 100%;
-    height: 100%;
+    background: #1abc9c;
+    text-align: center;
 }
 
-.homeContentBlock__calendarBlock__calendar th {
-    background-color: gray;
-    color: white;
-    width: 7%;
+.homeContentBlock__calendarBlock__calendarObject__month ul {
+    margin: 0;
+    padding: 0;
 }
-.homeContentBlock__calendarBlock__calendar td {
-    background-color: white;
+
+.homeContentBlock__calendarBlock__calendarObject__month ul li {
     color: white;
-    width: 7%;
-    height: 14%;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
+.homeContentBlock__calendarBlock__calendarObject__month__prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__month__next {
+    float: right;
+    padding-top: 10px;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white
+}
+
+/*End of example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
 
 .homeContentBlock__calendarBlock__contactBubble{
     grid-row: 3;
@@ -403,7 +454,7 @@ footer {
         height: 30%;
     }
 
-    .homeContentBlock__calendarBlock__Title{
+    .homeContentBlock__calendarBlock__title{
         right: 1%;
         margin-top: 1%;
     }
