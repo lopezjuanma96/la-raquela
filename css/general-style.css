@@ -335,13 +335,17 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     justify-self: flex-end;
+    position: relative;
+    left: 5%;
 }
 
 .homeContentBlock__calendarBlock__contactBubble__img{
     align-self: center;
     width: 3em;
     background-color: green;
-    clip-path: circle(42% at center);
+    clip-path: circle(45% at center);
+    position:relative;
+    left: 4%;
 }
 
 .homeContentBlock__calendarBlock__contactBubble__msg{
@@ -397,6 +401,20 @@ footer {
     .homeContentBlock__calendarBlock{
         width: 100%;
         height: 30%;
+    }
+
+    .homeContentBlock__calendarBlock__Title{
+        right: 1%;
+        margin-top: 1%;
+    }
+
+    .homeContentBlock__calendarBlock__contactBubble{
+        position: relative;
+        left: 1.5%;
+    }
+
+    .homeContentBlock__calendarBlock__contactBubble__img{
+        left: 2%;
     }
 }
 /* GALLERY | ----------------------*/
