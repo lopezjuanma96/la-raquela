@@ -63,10 +63,11 @@ footer {
 
 .headerBlock__navigation{
     position: relative;
+    overflow: auto;
+    white-space: nowrap;
     top: 40%;
     left: 1%;
     grid-row: 2;
-    width: fit-content;
 }
 
 .headerBlock__navigation__element{
@@ -75,6 +76,7 @@ footer {
     font-family: 'Ubuntu', sans-serif;
     padding: 2px;
     display: inline-block;
+    height: fit-content;
 }
 
 .headerBlock__navigation__element a{
@@ -106,7 +108,7 @@ footer {
     align-self: center;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 2fr 4fr;
-    width: 25%;
+    width: fit-content;
     height: 80%;
 }
 
@@ -141,18 +143,21 @@ footer {
 .footerBlock__location__addressText{
     grid-column: 2;
     grid-row: 2;
+    position: relative;
+    right: 2%;
     color: black;
+    height: fit-content;
     width: 100%;
-    font-size: smaller;
+    font-size: 1vm;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-left: 5%;
 }
 
 .footerBlock__location__addressText--clarify{
-    grid-column: 2;
-    grid-row: 4;
-    color: rgb(15, 15, 15);
+    position: relative;
+    right: 4%;
+    color: black;
     text-justify: auto;
     font-size: xx-small;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -165,25 +170,26 @@ footer {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    width: 100%;
+    width: 98%;
     height: 100%;
     margin: 1%;
 }
 
 .homeContentBlock__newsBlock{
-    display: grid;
+    display: inline-grid;
     align-self: center;
-    grid-template-rows: 2fr 6fr;
+    grid-template-rows: 1fr 3fr;
     gap: 1%;
     background-color: green;
     width: 30%;
-    height: 100%;
+    height: 30%; /*HERE: por que no funciona con el porcentaje*/
     margin: 1%;
 }
 
 .homeContentBlock__newsTitle{
     grid-row: 1;
     color: whitesmoke;
+    align-self: flex-end;
     font-size: 300%;
     font-family: 'Amatic SC', cursive;
     width: fit-content;
@@ -213,21 +219,22 @@ footer {
     font-family: 'Amatic SC', sans-serif;
     font-size: x-large;
     color: black;
-    border: 1px solid black;
     padding: 2px 4px;
 }
 
 .homeContentBlock__newsSection__content{
     grid-row: 2;
     background-color: white;
-    font-family: 'Ubuntu', sans-serif;
-    color: black;
-    border: 1px solid black;
     padding: 2px 4px;
 }
 
+.homeContentBlock__newsSection__content{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
 .homeContentBlock__reelBlock{
-    display: grid;
+    display: inline-grid;
     align-self: center;
     grid-template-rows: 1fr 5fr;
     width: 30%;
@@ -273,7 +280,7 @@ footer {
 }
 
 .homeContentBlock__calendarBlock{ /*Si esto se va a poner en todas las paginas se podría generalizar*/
-    display: grid;
+    display: inline-grid;
     align-self: center;
     grid-template-rows: 1fr 4fr;
     background-color: darkgray;
@@ -326,17 +333,28 @@ footer {
     }
 
     .homeContentBlock__newsBlock{
-        justify-self: center;
+        display: block;
         width: 100%;
-        height: 30%;
+        margin: 2%;
+    }
+
+    .homeContentBlock__newsTitle{
+        margin-top: 1%;
+    }
+
+    .homeContentBlock__newsSection{
+        grid-template-rows: 1fr 4fr;
+        width: 88%;
+        margin: 1% 6% 2% 6%;
     }
 
     .homeContentBlock__reelBlock{
-        justify-self: center;
+        display: block;
+
     }
 
     .homeContentBlock__calendarBlock{
-        justify-self: center;
+        display: block;
         width: 100%;
         height: 30%;
     }
