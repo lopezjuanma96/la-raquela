@@ -306,73 +306,87 @@ footer {
 .homeContentBlock__calendarBlock__calendarObject{
     grid-row: 2;
     width: 96%;
-    height: 50%;
+    height: 100%;
     margin: 2%;
 }
 
 /*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
 
 .homeContentBlock__calendarBlock__calendarObject__month {
-    padding: 70px 25px;
-    width: 100%;
-    background: #1abc9c;
+    padding: 5% 6%;
+    width: 98%;
+    background-image: url("../imgs/winter_cabin.png");
     text-align: center;
+    margin: 0% 1%;
 }
 
-.homeContentBlock__calendarBlock__calendarObject__month ul {
-    margin: 0;
-    padding: 0;
-}
-
-.homeContentBlock__calendarBlock__calendarObject__month ul li {
+.homeContentBlock__calendarBlock__calendarObject__month__name {
     color: white;
-    font-size: 20px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: min(4vw, 3em);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2%;
 }
 
 .homeContentBlock__calendarBlock__calendarObject__month__prev {
+    color: white;
     float: left;
-    padding-top: 10px;
+    font-size: min(2vw, 2em);
+    padding-top: 10%;
 }
 
 .homeContentBlock__calendarBlock__calendarObject__month__next {
+    color: white;
     float: right;
-    padding-top: 10px;
+    font-size: min(2vw, 2em);
+    padding-top: 10%;
 }
 
-.homeContentBlock__calendarBlock__calendarObject__weekdays {
-    margin: 0;
-    padding: 10px 0;
+.homeContentBlock__calendarBlock__calendarObject__weeks{
+    margin: 1% 0% 0% 0%
+}
+
+.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays {
+    padding: 1% 0;
     background-color: #ddd;
 }
 
-.homeContentBlock__calendarBlock__calendarObject__weekdays li {
+.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__weeks__weekdays li {
     display: inline-block;
-    width: 13.6%;
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
     color: #666;
     text-align: center;
 }
 
-.homeContentBlock__calendarBlock__calendarObject__days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
+.homeContentBlock__calendarBlock__calendarObject__weeks__days {
+    padding: 1% 0;
+    background-color: #ddd;
 }
 
-.homeContentBlock__calendarBlock__calendarObject__days li {
-    list-style-type: none;
+.homeContentBlock__calendarBlock__calendarObject__weeks__days ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.homeContentBlock__calendarBlock__calendarObject__weeks__days li {
     display: inline-block;
-    width: 13.6%;
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
     text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color: #777;
 }
 
-.days li .active {
+.homeContentBlock__calendarBlock__calendarObject__weeks__days--choice {
     padding: 5px;
-    background: #1abc9c;
+    background: lightgreen;
     color: white
 }
 
@@ -457,6 +471,16 @@ footer {
     .homeContentBlock__calendarBlock__title{
         right: 1%;
         margin-top: 1%;
+    }
+
+    .homeContentBlock__calendarBlock__calendarObject__month__prev {
+        font-size: min(4vw, 3em);
+        padding-top: 3%;
+    }
+    
+    .homeContentBlock__calendarBlock__calendarObject__month__next {
+        font-size: min(4vw, 3em);
+        padding-top: 3%;
     }
 
     .homeContentBlock__calendarBlock__contactBubble{
