@@ -29,6 +29,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
+    font-size: min(1rem, 3vw);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
@@ -73,17 +74,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background-color: wheat;
     padding: 2%;
+    align-self: center;
 }
 
 .shopContentBlock__howToBlock__title{
     color: black;
     font-family: 'Lobster', cursive;
-    font-size: xx-large;
+    font-size: min(2rem, 3vw);
     position: relative;
-    top: 2%;
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
@@ -128,4 +129,46 @@
     background-color: whitesmoke;
     color:black;
     width: 30%;
+}
+@media screen and (max-width: 690px){
+
+    .shopContentBlock{
+        display: grid;
+        grid-template-rows: 2fr 8fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 0%;
+    }
+
+    .shopContentBlock__productsBlock{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .shopContentBlock__productsBlock__title{
+        font-size: min(1rem, 9vw);
+    }
+
+    .shopContentBlock__howToBlock{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .shopContentBlock__howToBlock__title{
+        font-size: min(2rem, 9vw);
+    }
+
+    .shopContentBlock__costsTable{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .shopContentBlock__productsBlock__gridElement{
+        margin: 1% 0%;
+        row-gap: 2%;
+    }
+
+    .shopContentBlock__productsBlock__grid{
+        justify-content: center;
+        align-content: center;
+    }
 }
