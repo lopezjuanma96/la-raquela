@@ -37,7 +37,7 @@
     display: grid;
     grid-template-rows: 1fr 7fr;
     width: 92%;
-    height: 92%;
+    height: 91%;
     margin: 4%;
 }
 
@@ -71,7 +71,7 @@
 .homeContentBlock__reelBlock{
     display: inline-grid;
     align-self: center;
-    grid-template-rows: min(2vw, 1.3em) 1fr;
+    grid-template-rows: min(2vw, 1.3rem) 1fr;
     width: 30%;
     height: 30%;
     margin: 1%;
@@ -85,7 +85,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: min(2vw, 1.3em);
+    font-size: min(2vw, 1.3rem);
     width: fit-content;
     height: fit-content;
     padding: 3px 7px;
@@ -116,7 +116,7 @@
 .homeContentBlock__calendarBlock{ /*Si esto se va a poner en todas las paginas se podría generalizar*/
     display: inline-grid;
     align-self: center;
-    grid-template-rows: min(2vw, 1.5em) 6fr 1fr;
+    grid-template-rows: min(2vw, 1.5rem) 6fr 1fr;
     background-color: darkgray;
     width: 30%;
     height: 100%;
@@ -130,7 +130,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: min(2vw, 1.5em);
+    font-size: min(2vw, 1.5rem);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
@@ -182,7 +182,7 @@
 .homeContentBlock__calendarBlock__contactBubble__msgText{
     color: green;
     font-family: 'Lobster', cursive;
-    font-size: min(2vw, 1em)
+    font-size: min(2vw, 1rem)
 }
 
 @media screen and (max-width: 1280px){
