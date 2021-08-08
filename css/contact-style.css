@@ -2,7 +2,7 @@
 
 .contactBlock{
     display: grid;
-    grid-template-rows: 24px 40fr;
+    grid-template-rows: 2rem 1fr;
     width: 98%;
     height: 92%;
     margin: 1%;
@@ -14,6 +14,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
+    font-size: min(1rem, 4vw);
     width: fit-content;
     height: fit-content;
     padding: 0px 15px;
@@ -31,7 +32,7 @@
 
 .contactBlock__gridElement{
     display: grid;
-    background-color: gray;
+    background-color: white;
     border: 1px solid darkgray;
     border-radius: 10px;
     height: 94%;
@@ -61,4 +62,17 @@
 
 .contactBlock__gridElement__text--content{
     font-size: small;
+}
+
+@media screen and (max-width: 520px){
+
+    .contactBlock{
+        grid-template-rows: 9vw 1fr;
+    }
+
+    .contactBlock__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
 }
