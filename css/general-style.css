@@ -10,7 +10,7 @@
 @import url('info-style.css');
 @import url('contact-style.css');
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); /*animations from https://animate.style/*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); /*animations from https://animate.style/ */
 
 /* TAGS  | -------------------------------*/
 
@@ -266,11 +266,6 @@ footer {
     color: #666;
     justify-self: center;
     list-style-type: none;
-    transition: font-size 0.3s;
-}
-
-.calendarObject__weeks__days li:hover {
-    font-size: 20px;
 }
 
 .calendarObject__weeks__days--choice {
@@ -288,6 +283,10 @@ footer {
     .calendarObject__month__next {
         font-size: min(4vw, 3em);
         padding-top: 3%;
+    }
+
+    .calendarObject__month__name {
+        font-size: max(2rem, 5vw);
     }
 
     .calendarObject__weeks__days {
