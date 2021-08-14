@@ -1,24 +1,20 @@
 /*SHOP | ----------------------------*/
 
 .shopContentBlock{
-    display: grid;
-    grid-template-columns: 6fr 3fr;
-    grid-template-rows: 8fr 1fr;
-    row-gap: 2%;
-    column-gap: 1%;
+    display: flex;
+    flex-direction: row;
     width: 98%;
-    height: 92%;
+    height: 98%;
     margin: 1%;
 }
 
 .shopContentBlock__productsBlock{
-    grid-column: 1;
-    grid-row: 1;
     background-color: gray;
-    width: 100%;
+    width: 69%;
     height: 100%;
+    margin: 0% 0.5%;
     display: grid;
-    grid-template-rows: 24px 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .shopContentBlock__productsBlock__title{
@@ -40,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
     width: 98%;
     height: 100%;
     margin: 0% 1%;
@@ -51,7 +48,7 @@
     height: fit-content;
     width: fit-content;
     padding: 0% 1%;
-    margin: 0% 1% 1% 1%;
+    margin: 1% 0%;
     grid-template-rows: 7fr 3fr;
     row-gap: 2%;
 }
@@ -69,13 +66,12 @@
 }
 
 .shopContentBlock__howToBlock{
-    grid-column: 2;
-    grid-row: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 29%;
     height: fit-content;
     background-color: wheat;
+    margin: 0% 0.5%;
     padding: 2%;
     align-self: center;
 }
@@ -105,9 +101,7 @@
     width: 90%;
 }
 
-.shopContentBlock__costsTable{
-    grid-column: 1/3;
-    grid-row: 2;
+.shopCostsTable{
     width: 98%;
     height: fit-content;
     padding: 1% 1%;
@@ -115,17 +109,17 @@
     border: 2px solid gray;
 }
 
-.shopContentBlock__costsTable table{
-    width:100%
+.shopCostsTable table{
+    width:100%;
 }
 
-.shopContentBlock__costsTable th {
+.shopCostsTable th {
     background-color: gray;
     color: whitesmoke;
     width: 30%;
 }
 
-.shopContentBlock__costsTable tr {
+.shopCostsTable tr {
     background-color: whitesmoke;
     color:black;
     width: 30%;
@@ -133,15 +127,12 @@
 @media screen and (max-width: 690px){
 
     .shopContentBlock{
-        display: grid;
-        grid-template-rows: 2fr 8fr 1fr;
-        grid-template-columns: 1fr;
-        row-gap: 0%;
+        flex-direction: column;
     }
 
     .shopContentBlock__productsBlock{
-        grid-column: 1;
-        grid-row: 2;
+        margin: 0.5% 0%;
+        width: 100%;
     }
 
     .shopContentBlock__productsBlock__title{
@@ -149,26 +140,15 @@
     }
 
     .shopContentBlock__howToBlock{
-        grid-column: 1;
-        grid-row: 1;
+        margin: 0.5% 0%;
+        width: 100%;
     }
 
     .shopContentBlock__howToBlock__title{
         font-size: min(2rem, 9vw);
     }
 
-    .shopContentBlock__costsTable{
-        grid-column: 1;
-        grid-row: 3;
-    }
-
     .shopContentBlock__productsBlock__gridElement{
-        margin: 1% 0%;
         row-gap: 2%;
-    }
-
-    .shopContentBlock__productsBlock__grid{
-        justify-content: center;
-        align-content: center;
     }
 }
