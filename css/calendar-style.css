@@ -3,7 +3,7 @@
 .calendarBlock{
     background-color: khaki;
     display: grid;
-    grid-template-rows: max(3vw, 1em) 1fr;
+    grid-template-rows: auto 1fr;
     width: 98%;
     height: 92%;
     margin: 1%;
