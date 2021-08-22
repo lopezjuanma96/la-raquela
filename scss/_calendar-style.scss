@@ -1,7 +1,7 @@
 /* CALENDAR | ----------------------*/
 
 .calendarBlock{
-    background-color: khaki;
+    background-color: $calendar-secondary;
     display: grid;
     grid-template-rows: auto 1fr;
     width: 98%;
@@ -11,13 +11,7 @@
 
 .calendarBlock__title{
     grid-row: 1;
-    background-color: whitesmoke;
-    color: black;
-    font-family: 'Lobster', cursive;
-    font-size: unquote("max(3vw, 1em)");
-    position:relative;
-    top: 15%;
-    right: 1%;
+    @include create-cursive-title(unquote("max(3vw, 1em)"), $dark-titles, $calendar-title-bckgnd, 15%, 1%);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
