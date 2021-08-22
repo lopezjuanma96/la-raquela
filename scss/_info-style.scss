@@ -24,7 +24,7 @@
     top: 40%;
     background-color: green;
     color: white;
-    font-size: min(3rem, 3vw);
+    font-size: unquote("min(3rem, 3vw)");
     font-family: 'Lobster', cursive;
     width:fit-content;
     height:fit-content;
@@ -54,7 +54,7 @@
 }
 
 .infoBlock__contentBlock__text--invite{
-    font-size: min(9rem, 3vw);
+    font-size: unquote("min(9rem, 3vw)");
     color: black;
     font-family: 'Amatic SC', cursive;;
     font-weight: bolder;
@@ -67,14 +67,14 @@
 
 @media screen and (max-width: 400px){
     .infoBlock__contentBlock{
-        grid-template-rows: min(3rem, 3vm) 1fr 1fr;
+        grid-template-rows: unquote("min(3rem, 3vm) 1fr 1fr");
         grid-template-columns: 1fr;
     }
 
     .infoBlock__contentBlock__title{
         grid-row: 1;
         grid-column: 1;
-        font-size: min(3rem, 6vw);
+        font-size: unquote("min(3rem, 6vw)");
     }
 
     .infoBlock__contentBlock__image{
@@ -91,6 +91,6 @@
     }
 
     .infoBlock__contentBlock__text--invite{
-        font-size: min(9rem, 8vw);
+        font-size: unquote("min(9rem, 8vw)");
     }
 }

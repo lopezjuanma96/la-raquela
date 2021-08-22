@@ -14,7 +14,7 @@
     background-color: whitesmoke;
     color: black;
     font-family: 'Lobster', cursive;
-    font-size: max(3vw, 1em);
+    font-size: unquote("max(3vw, 1em)");
     position:relative;
     top: 15%;
     right: 1%;

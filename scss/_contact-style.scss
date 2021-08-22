@@ -14,7 +14,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: min(1rem, 4vw);
+    font-size: unquote("min(1rem, 4vw)");
     width: fit-content;
     height: fit-content;
     padding: 0px 15px;
@@ -64,11 +64,11 @@
 }
 
 .contactBlock__gridElement__text--title{
-    font-size: min(1rem, 3vw);
+    font-size: unquote("min(1rem, 3vw)");
 }
 
 .contactBlock__gridElement__text--content{
-    font-size: min(1rem, 2vw);
+    font-size: unquote("min(1rem, 2vw)");
 }
 
 .contactFormBlock{
@@ -80,7 +80,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: min(1rem, 4vw);
+    font-size: unquote("min(1rem, 4vw)");
     width: fit-content;
     height: fit-content;
     padding: 0px 0.1rem;
@@ -94,10 +94,10 @@
     }
 
     .contactBlock__gridElement__text--title{
-        font-size: max(0.8rem, 3vw);
+        font-size: unquote("max(0.8rem, 3vw)");
     }
     
     .contactBlock__gridElement__text--content{
-        font-size: max(0.8rem, 2vw);
+        font-size: unquote("max(0.8rem, 2vw)");
     }
 }

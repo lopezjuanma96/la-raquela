@@ -25,7 +25,7 @@
     background-color: green;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-    font-size: min(1rem, 3vw);
+    font-size: unquote("min(1rem, 3vw)");
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
@@ -79,7 +79,7 @@
 .shopContentBlock__howToBlock__title{
     color: black;
     font-family: 'Lobster', cursive;
-    font-size: min(2rem, 3vw);
+    font-size: unquote("min(2rem, 3vw)");
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -136,7 +136,7 @@
     }
 
     .shopContentBlock__productsBlock__title{
-        font-size: min(1rem, 9vw);
+        font-size: unquote("min(1rem, 9vw)");
     }
 
     .shopContentBlock__howToBlock{
@@ -145,7 +145,7 @@
     }
 
     .shopContentBlock__howToBlock__title{
-        font-size: min(2rem, 9vw);
+        font-size: unquote("min(2rem, 9vw)");
     }
 
     .shopContentBlock__productsBlock__gridElement{
