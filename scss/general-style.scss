@@ -65,13 +65,12 @@ footer {
     left: 1%;
     top: 13%;
     width: 98%;
-}
-
-.headerBlock__title h1{
+    h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: 230%;
     color: whitesmoke;
     font-weight: bold;
+    }
 }
 
 
@@ -97,15 +96,13 @@ footer {
     height: fit-content;
     align-self: flex-end;
     margin: 0% unquote("min(0.5%, 3px)");
-}
-
-.headerBlock__navigation__element a{
+    a{
     color:black;
     text-decoration: none;
-}
-
-.headerBlock__navigation__element a:active{
+    }
+    a:active{
     color:gray;
+    }
 }
 
 .headerBlock__navigation__element--choice{
@@ -237,39 +234,35 @@ footer {
 .calendarObject__weeks__weekdays {
     padding: 1% 0;
     background-color: white;
-}
-
-.calendarObject__weeks__weekdays ul {
+    ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-}
-
-.calendarObject__weeks__weekdays li {
+    }
+    li {
     width: 13%;
     font-family: 'Roboto', sans-serif;
     color: #666;
     justify-self: center;
     list-style-type: none;
+    }
 }
 
 .calendarObject__weeks__days {
     padding: 1% 0% 4% 0%;
     background-color: wheat;
-}
-
-.calendarObject__weeks__days ul {
+    ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
     row-gap: 3%;
-}
-
-.calendarObject__weeks__days li {
+    }
+    li {
     width: 13%;
     font-family: 'Roboto', sans-serif;
     color: #666;
     justify-self: center;
     list-style-type: none;
+    }
 }
 
 .calendarObject__weeks__days--choice {

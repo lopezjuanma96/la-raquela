@@ -337,9 +337,8 @@
   background-color: white;
   border: 3px solid green;
   padding: 0px 7px; }
-
-.homeContentBlock__calendarBlock__contactBubble__msg a {
-  text-decoration: none; }
+  .homeContentBlock__calendarBlock__contactBubble__msg a {
+    text-decoration: none; }
 
 .homeContentBlock__calendarBlock__contactBubble__msgText {
   color: green;
@@ -439,9 +438,8 @@
   font-family: 'Amatic SC', cursive;
   font-weight: bolder;
   align-self: flex-end; }
-
-.infoBlock__contentBlock__text--invite a {
-  text-decoration: none; }
+  .infoBlock__contentBlock__text--invite a {
+    text-decoration: none; }
 
 @media screen and (max-width: 400px) {
   .infoBlock__contentBlock {
@@ -635,12 +633,11 @@ footer {
   left: 1%;
   top: 13%;
   width: 98%; }
-
-.headerBlock__title h1 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 230%;
-  color: whitesmoke;
-  font-weight: bold; }
+  .headerBlock__title h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 230%;
+    color: whitesmoke;
+    font-weight: bold; }
 
 .headerBlock__navigation {
   position: relative;
@@ -663,13 +660,11 @@ footer {
   height: fit-content;
   align-self: flex-end;
   margin: 0% min(0.5%, 3px); }
-
-.headerBlock__navigation__element a {
-  color: black;
-  text-decoration: none; }
-
-.headerBlock__navigation__element a:active {
-  color: gray; }
+  .headerBlock__navigation__element a {
+    color: black;
+    text-decoration: none; }
+  .headerBlock__navigation__element a:active {
+    color: gray; }
 
 .headerBlock__navigation__element--choice {
   background-color: white;
@@ -781,34 +776,30 @@ footer {
 .calendarObject__weeks__weekdays {
   padding: 1% 0;
   background-color: white; }
-
-.calendarObject__weeks__weekdays ul {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); }
-
-.calendarObject__weeks__weekdays li {
-  width: 13%;
-  font-family: 'Roboto', sans-serif;
-  color: #666;
-  justify-self: center;
-  list-style-type: none; }
+  .calendarObject__weeks__weekdays ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); }
+  .calendarObject__weeks__weekdays li {
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    justify-self: center;
+    list-style-type: none; }
 
 .calendarObject__weeks__days {
   padding: 1% 0% 4% 0%;
   background-color: wheat; }
-
-.calendarObject__weeks__days ul {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  row-gap: 3%; }
-
-.calendarObject__weeks__days li {
-  width: 13%;
-  font-family: 'Roboto', sans-serif;
-  color: #666;
-  justify-self: center;
-  list-style-type: none; }
+  .calendarObject__weeks__days ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 3%; }
+  .calendarObject__weeks__days li {
+    width: 13%;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    justify-self: center;
+    list-style-type: none; }
 
 .calendarObject__weeks__days--choice {
   padding: 1%;

@@ -59,10 +59,9 @@
     font-family: 'Amatic SC', cursive;;
     font-weight: bolder;
     align-self: flex-end;
-}
-
-.infoBlock__contentBlock__text--invite a{
+    a{
     text-decoration: none;
+    }
 }
 
 @media screen and (max-width: 400px){
