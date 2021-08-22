@@ -65,11 +65,15 @@ footer {
     left: 1%;
     top: 13%;
     width: 98%;
+}
+
+.headerBlock__title h1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 150%;
+    font-size: 230%;
     color: whitesmoke;
     font-weight: bold;
 }
+
 
 .headerBlock__navigation{
     position: relative;
