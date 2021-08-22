@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Raquela ~ Contacto</title>
 
+    <link href="../css-BS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css-BS/bootstrap-grid.min.css" rel="stylesheet" type="text/css"
+    <script src="../js-BS/bootstrap.bundle.min.js"></script>
+
     <link href="../imgs/page-logo.png" rel="icon">
     <link href="../css/general-style.css" rel="stylesheet" type="text/css">
 </head>
@@ -30,7 +34,7 @@
     <section>
         <div class="contactBlock">
             <div class="contactBlock__title">
-                <h2>Contactanos a través de cualquiera de estos medios</h2>
+                <h2>Contactanos a través de cualquiera de estos medios..</h2>
             </div>
             <div class="contactBlock__grid">
                 <div class="contactBlock__gridElement">
@@ -99,6 +103,40 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="contactFormBlock container">
+            <div class="row justify-content-end">
+                <div class="contactFormBlock__title col col-8">
+                    <h2>..o si ya pasaste por acá, dejanos tu opinión</h2>
+                </div>
+            </div>
+            <form>
+                <div class="form-group row">
+                    <div class="col col-lg-6 col-md-12 col-12">
+                        <label for="formName">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="formName" aria-describedby="emailHelp" placeholder="Nombre Apellido">
+                        <small id="emailHelp" class="form-text text-muted">(Opcional)</small>
+                    </div>
+
+                    <div class="col col-lg-6 col-md-12 col-12">
+                        <label for="formEmail">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="formEmail" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com">
+                        <small id="emailHelp" class="form-text text-muted">(Opcional)</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Contanos cómo estuvo tu visita:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="exampleCheck1">Volverías a visitarnos?</label>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="col col-4 btn btn-success">Submit</button>
+                </div>
+              </form>
         </div>
     </section>
 

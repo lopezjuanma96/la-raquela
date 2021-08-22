@@ -71,6 +71,21 @@
     font-size: min(1rem, 2vw);
 }
 
+.contactFormBlock{
+    margin-bottom: 1%;
+}
+
+.contactFormBlock__title{
+    position: relative;
+    background-color: green;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: min(1rem, 4vw);
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 0.1rem;
+}
+
 @media screen and (max-width: 504px){
 
     .contactBlock__grid{
