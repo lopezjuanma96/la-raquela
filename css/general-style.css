@@ -625,6 +625,10 @@ footer {
   height: 100%;
   z-index: 4; }
 
+p {
+  margin-bottom: 0rem;
+  /*against the margin-bottom applied by BS*/ }
+
 /* CLS | -----------------------------*/
 .headerBlock {
   background-image: url("../imgs/headerBck.png");
@@ -687,7 +691,9 @@ footer {
   flex-direction: row-reverse;
   background-image: url("../imgs/footerBck.png");
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  line-height: 1.0;
+  /*to compensate for line-height applied by BS*/ }
 
 .footerBlock__location {
   display: inline-grid;
