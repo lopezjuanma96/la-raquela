@@ -4,7 +4,7 @@
     background-image: linear-gradient(to left, red, sandybrown, red);
     width: 98%;
     height: fit-content;
-    margin: 1%;
+    margin: 5% 1%;
 }
 
 .infoBlock__contentBlock{
@@ -19,13 +19,7 @@
 .infoBlock__contentBlock__title{
     grid-row: 1;
     grid-column: 1/3;
-    position: relative;
-    right: 1%;
-    top: 40%;
-    background-color: green;
-    color: white;
-    font-size: unquote("min(3rem, 3vw)");
-    font-family: 'Lobster', cursive;
+    @include create-cursive-title(unquote("min(3rem, 3vw)"), $light-titles, $light-titles-bckgnd, 40%, 1%);
     width:fit-content;
     height:fit-content;
     padding: 0px 7px;
@@ -47,7 +41,7 @@
     color: white;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-text-font;
     padding-left: 10%;
     width: 94%;
     margin: 6% 3%;
@@ -56,7 +50,7 @@
 .infoBlock__contentBlock__text--invite{
     font-size: unquote("min(9rem, 3vw)");
     color: black;
-    font-family: 'Amatic SC', cursive;;
+    font-family: $roman-title-font;
     font-weight: bolder;
     align-self: flex-end;
     a{

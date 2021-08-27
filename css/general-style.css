@@ -57,11 +57,15 @@
 
 .contactBlock__title {
   grid-row: 1;
-  position: relative;
-  background-color: green;
-  color: whitesmoke;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: min(1rem, 4vw);
+  color: whitesmoke;
+  background-color: green;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: fit-content;
   height: fit-content;
   padding: 0px 15px; }
@@ -101,7 +105,7 @@
   grid-column: 2;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black; }
 
 .contactBlock__gridElement__text--title {
@@ -114,11 +118,15 @@
   margin-bottom: 1%; }
 
 .contactFormBlock__title {
-  position: relative;
-  background-color: green;
-  color: whitesmoke;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: min(1rem, 4vw);
+  color: whitesmoke;
+  background-color: green;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: fit-content;
   height: fit-content;
   padding: 0px 0.1rem; }
@@ -398,7 +406,7 @@
   background-image: linear-gradient(to left, red, sandybrown, red);
   width: 98%;
   height: fit-content;
-  margin: 1%; }
+  margin: 5% 1%; }
 
 .infoBlock__contentBlock {
   display: grid;
@@ -411,13 +419,15 @@
 .infoBlock__contentBlock__title {
   grid-row: 1;
   grid-column: 1/3;
-  position: relative;
-  right: 1%;
-  top: 40%;
-  background-color: green;
-  color: white;
+  font-family: "Lobster", cursive;
   font-size: min(3rem, 3vw);
-  font-family: 'Lobster', cursive;
+  color: whitesmoke;
+  background-color: green;
+  position: relative;
+  top: 40%;
+  right: 1%;
+  bottom: 0;
+  left: 0;
   width: fit-content;
   height: fit-content;
   padding: 0px 7px; }
@@ -437,7 +447,7 @@
   color: white;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-left: 10%;
   width: 94%;
   margin: 6% 3%; }
@@ -445,7 +455,7 @@
 .infoBlock__contentBlock__text--invite {
   font-size: min(9rem, 3vw);
   color: black;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: bolder;
   align-self: flex-end; }
   .infoBlock__contentBlock__text--invite a {

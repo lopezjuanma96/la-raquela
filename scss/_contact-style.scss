@@ -10,11 +10,7 @@
 
 .contactBlock__title{
     grid-row: 1;
-    position: relative;
-    background-color: green;
-    color: whitesmoke;
-    font-family: 'Lobster', cursive;
-    font-size: unquote("min(1rem, 4vw)");
+    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd);
     width: fit-content;
     height: fit-content;
     padding: 0px 15px;
@@ -59,8 +55,8 @@
     grid-column: 2;
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: black
+    font-family: $main-text-font;
+    color: black;
 }
 
 .contactBlock__gridElement__text--title{
@@ -76,11 +72,7 @@
 }
 
 .contactFormBlock__title{
-    position: relative;
-    background-color: green;
-    color: whitesmoke;
-    font-family: 'Lobster', cursive;
-    font-size: unquote("min(1rem, 4vw)");
+    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd);
     width: fit-content;
     height: fit-content;
     padding: 0px 0.1rem;
