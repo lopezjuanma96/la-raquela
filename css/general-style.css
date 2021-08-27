@@ -37,6 +37,7 @@
   right: 1%;
   bottom: 0;
   left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 7px; }
@@ -66,6 +67,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 15px; }
@@ -127,6 +129,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 0.1rem; }
@@ -159,14 +162,18 @@
   margin: 1% 0%; }
 
 .galleryReel__title {
-  color: whitesmoke;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 5vw;
+  color: whitesmoke;
+  background-color: transparent;
+  position: relative;
+  top: 3%;
+  right: 0;
+  bottom: 0;
+  left: 1%;
+  padding: 0% 1%;
   grid-row: 1;
   z-index: 4;
-  position: relative;
-  left: 1%;
-  top: 3%;
   width: 99%; }
 
 .galleryReel__content {
@@ -184,7 +191,13 @@
   min-width: 28px;
   /*with JS should change the amt of phtoos accodding to width*/
   width: 15%;
-  max-height: 100%; }
+  max-height: 100%;
+  align-self: center;
+  background-color: whitesmoke; }
+  .galleryReel__content__element img {
+    position: relative;
+    right: 10px;
+    bottom: 10px; }
 
 .carousel {
   display: none; }
@@ -428,6 +441,7 @@
   right: 1%;
   bottom: 0;
   left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 7px; }
@@ -658,7 +672,7 @@ p {
   top: 13%;
   width: 98%; }
   .headerBlock__title h1 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 230%;
     color: whitesmoke;
     font-weight: bold; }
@@ -678,7 +692,7 @@ p {
 .headerBlock__navigation__element {
   background-color: lightgray;
   font-size: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 2px;
   display: inline;
   height: fit-content;
@@ -743,6 +757,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 0% 1%;
   width: fit-content; }
 
 .footerBlock__location__addressText {
@@ -754,7 +769,7 @@ p {
   right: 2%;
   width: fit-content;
   font-size: min(1rem, 5vw);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-left: 5%; }
 
@@ -764,7 +779,7 @@ p {
   color: black;
   text-justify: auto;
   font-size: min(0.5rem, 4vw);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold; }
 
 @media screen and (max-width: 480px) {
@@ -785,7 +800,7 @@ p {
 
 .calendarObject__month__name {
   color: white;
-  font-family: 'Amatic SC', sans-serif;
+  font-family: "Amatic SC", cursive;
   font-size: min(4vw, 3em);
   text-transform: uppercase;
   letter-spacing: 2%; }
@@ -813,7 +828,7 @@ p {
     grid-template-columns: repeat(7, 1fr); }
   .calendarObject__weeks__weekdays li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #666666;
     justify-self: center;
     list-style-type: none; }
@@ -828,7 +843,7 @@ p {
     row-gap: 3%; }
   .calendarObject__weeks__days li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #666666;
     justify-self: center;
     list-style-type: none; }

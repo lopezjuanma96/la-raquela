@@ -69,7 +69,7 @@ p {
     top: 13%;
     width: 98%;
     h1{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $navigator-text-font;
     font-size: 230%;
     color: $light-titles;
     font-weight: bold;
@@ -93,7 +93,7 @@ p {
 .headerBlock__navigation__element{
     background-color: $nav-bckgnd;
     font-size: 100%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $navigator-text-font;
     padding: 2px;
     display: inline;
     height: fit-content;
@@ -170,7 +170,7 @@ p {
     right: 2%;
     width: fit-content;
     font-size: unquote("min(1rem, 5vw)");
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-text-font;
     font-weight: bold;
     margin-left: 5%;
 }
@@ -181,7 +181,7 @@ p {
     color: $dark-text;
     text-justify: auto;
     font-size: unquote("min(0.5rem, 4vw)");
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $main-text-font;
     font-weight: bold;
 }
 
@@ -209,7 +209,7 @@ p {
 
 .calendarObject__month__name {
     color: $calendar-main;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: $roman-title-font;
     font-size: unquote("min(4vw, 3em)");
     text-transform: uppercase;
     letter-spacing: 2%;
@@ -242,7 +242,7 @@ p {
     }
     li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-text-font;
     color: $calendar-day-text;
     justify-self: center;
     list-style-type: none;
@@ -260,7 +260,7 @@ p {
     }
     li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
+    font-family: $main-text-font;
     color: $calendar-day-text;
     justify-self: center;
     list-style-type: none;
