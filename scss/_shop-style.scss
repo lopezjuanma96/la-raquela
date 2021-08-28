@@ -19,13 +19,7 @@
 
 .shopContentBlock__productsBlock__title{
     grid-row: 1;
-    position: relative;
-    top: 20%;
-    right: 1%;
-    background-color: green;
-    color: whitesmoke;
-    font-family: 'Lobster', cursive;
-    font-size: unquote("min(1rem, 3vw)");
+    @include create-cursive-title(unquote("min(1rem, 3vw)"), $light-titles, $light-titles-bckgnd, 20%, 1%);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;

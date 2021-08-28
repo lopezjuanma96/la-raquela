@@ -1,16 +1,61 @@
-$main-bckgnd: white;
-$nav-bckgnd: lightgray;
-$float-sqaure-bckgnd: darkgreen;
+$color-mode: night;
+
+$main-bckgnd: null;
+$nav-bckgnd: null;
+$nav-not-chosen: null;
+$nav-chosen: null;
+$float-square-bckgnd: null;
+$header-border: null;
+$light-titles: null;
+$light-titles-bckgnd: null;
+$dark-titles: null;
+$dark-text: null;
+
+@if $color-mode == day{
+    $main-bckgnd: white;
+    $nav-bckgnd: rgb(7, 88, 7);
+    $nav-not-chosen: whitesmoke;
+    $nav-chosen: black;
+    $float-square-bckgnd: darkgreen;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: green;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+} @else if $color-mode == night{
+    $main-bckgnd: rgb(22, 21, 21);
+    $nav-bckgnd: white;
+    $nav-not-chosen: rgb(37, 36, 36);
+    $nav-chosen: whitesmoke;
+    $float-square-bckgnd: darkgreen;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: green;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: white;
+} @else if $color-mode == christmas{
+    $main-bckgnd: wheat;
+    $nav-bckgnd: white;
+    $nav-not-chosen: khaki;
+    $nav-chosen: black;
+    $float-square-bckgnd: red;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: rgb(226, 11, 11);
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+} @else if $color-mode == greyscale{
+    $main-bckgnd: white;
+    $nav-bckgnd: rgb(27, 25, 25);
+    $nav-not-chosen: black;
+    $nav-chosen: black;
+    $float-square-bckgnd: gray;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: lightgrey;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+}
+
 
 $calendar-main: white;
 $calendar-secondary: khaki;
 $calendar-day-text: rgb(102, 102, 102);
 $calendar-day-bckgnd: wheat;
 $calendar-title-bckgnd: whitesmoke;
-
-$header-border:rgb(7, 88, 7);
-
-$light-titles: whitesmoke;
-$light-titles-bckgnd: green;
-$dark-titles: rgb(20, 19, 19);
-$dark-text: black;

@@ -218,7 +218,7 @@
   align-content: center;
   width: 98%;
   height: 100%;
-  margin: 1%; }
+  margin: 10% 1%; }
 
 .homeContentBlock__newsBlock {
   display: inline-grid;
@@ -308,7 +308,8 @@
 
 .homeContentBlock__reelBlock__reelElement {
   display: inline-block;
-  width: 30%; }
+  width: 30%;
+  align-self: center; }
 
 .homeContentBlock__reelBlock__reelIcon {
   grid-row: 2;
@@ -386,7 +387,6 @@
 .homeContentBlock__calendarBlock__contactBubble__msgText {
   font-family: "Lobster", cursive;
   font-size: min(2vw, 1rem);
-  color: #075807;
   background-color: transparent;
   position: relative;
   top: 0;
@@ -533,13 +533,16 @@
 
 .shopContentBlock__productsBlock__title {
   grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(1rem, 3vw);
+  color: whitesmoke;
+  background-color: green;
   position: relative;
   top: 20%;
   right: 1%;
-  background-color: green;
-  color: whitesmoke;
-  font-family: 'Lobster', cursive;
-  font-size: min(1rem, 3vw);
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 7px; }
@@ -651,6 +654,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #161515;
   width: 100%;
   height: 100%; }
 
@@ -678,7 +682,7 @@ p {
   background-image: url("../imgs/headerBck.png");
   border-width: 0px 0px 0.2rem 0px;
   border-style: solid;
-  border-color: #075807;
+  border-color: white;
   display: grid;
   grid-template-rows: 4fr 3fr;
   width: 100%;
@@ -710,7 +714,7 @@ p {
   grid-row: 2; }
 
 .headerBlock__navigation__element {
-  background-color: lightgray;
+  background-color: white;
   font-size: 100%;
   font-family: "Ubuntu", sans-serif;
   padding: 2px;
@@ -719,16 +723,18 @@ p {
   align-self: flex-end;
   margin: 0% min(0.5%, 3px); }
   .headerBlock__navigation__element a {
-    color: black;
+    color: #252424;
     text-decoration: none; }
   .headerBlock__navigation__element a:active {
     color: gray; }
 
 .headerBlock__navigation__element--choice {
-  background-color: white;
+  background-color: #161515;
   font-weight: bolder;
   font-size: 120%;
   padding: 5px; }
+  .headerBlock__navigation__element--choice a {
+    color: whitesmoke; }
 
 .footerBlock {
   display: flex;
@@ -747,7 +753,7 @@ p {
   max-width: 100%; }
 
 .footerBlock__location__bckSquare {
-  background-color: darkgreen;
+  background-color: white;
   grid-column: 1/3;
   grid-row: 2;
   height: 60%;
@@ -784,7 +790,7 @@ p {
   grid-column: 2;
   grid-row: 2;
   position: relative;
-  color: black;
+  color: #252424;
   height: fit-content;
   right: 2%;
   width: fit-content;
@@ -796,7 +802,7 @@ p {
 .footerBlock__location__addressText--clarify {
   position: relative;
   right: 4%;
-  color: black;
+  color: #252424;
   text-justify: auto;
   font-size: min(0.5rem, 4vw);
   font-family: "Roboto", sans-serif;
