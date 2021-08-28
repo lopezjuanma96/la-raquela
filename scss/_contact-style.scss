@@ -29,7 +29,7 @@
 .contactBlock__gridElement{
     display: grid;
     background-color: white;
-    border: 1px solid darkgray;
+    border: 2px solid $float-square-secondary;
     border-radius: 10px;
     height: 94%;
     width: 98%;
@@ -69,10 +69,20 @@
 
 .contactFormBlock{
     margin-bottom: 1%;
+    label{
+        color: $dark-text;
+    }
+    small{
+        color: $dark-text-secondary;
+    }
+    button{
+        background-color: $float-square-bckgnd;
+        border: $nav-bckgnd;
+    }
 }
 
 .contactFormBlock__title{
-    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd);
+    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd, $left: 3%);
     width: fit-content;
     height: fit-content;
     padding: 0px 0.1rem;

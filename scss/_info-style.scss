@@ -13,7 +13,7 @@
     grid-template-columns: 2fr 8fr;
     width: 100%;
     height: 100%;
-    background-color: cornsilk;
+    background-color: $float-square-secondary;
 }
 
 .infoBlock__contentBlock__title{
@@ -37,7 +37,7 @@
     grid-row: 2;
     grid-column: 2;
     display: flex;
-    background-color: sandybrown;
+    background-color: $float-square-aux;
     color: white;
     flex-direction: column;
     justify-content: space-between;
@@ -49,7 +49,7 @@
 
 .infoBlock__contentBlock__text--invite{
     font-size: unquote("min(9rem, 3vw)");
-    color: black;
+    color: $dark-text;
     font-family: $roman-title-font;
     font-weight: bolder;
     align-self: flex-end;

@@ -2,6 +2,9 @@
 
 .calendarBlock{
     background-color: $calendar-secondary;
+    @if $color-mode == grayscale{
+        background-color: $float-square-bckgnd;
+    }
     display: grid;
     grid-template-rows: auto 1fr;
     width: 98%;

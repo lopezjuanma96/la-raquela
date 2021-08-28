@@ -14,7 +14,7 @@
     align-self: center;
     grid-template-rows: 1fr 3fr;
     gap: 1%;
-    background-color: $light-titles-bckgnd;
+    background-color: $float-square-bckgnd;
     width: 30%;
     height: 30%; /*HERE: por que no funciona con el porcentaje*/
     margin: 1%;
@@ -22,7 +22,7 @@
 
 .homeContentBlock__newsTitle{
     grid-row: 1;
-    color: whitesmoke;
+    color: $light-titles;
     align-self: flex-end;
     font-size: 300%;
     font-family: 'Amatic SC', cursive;
@@ -117,7 +117,7 @@
     display: inline-grid;
     align-self: center;
     grid-template-rows: unquote("min(2vw, 1.5rem) 6fr 1fr");
-    background-color: darkgray;
+    background-color: $float-square-secondary;
     width: 30%;
     height: 100%;
     margin: 1%;
@@ -166,16 +166,18 @@
     height: fit-content;
     border-radius: 25px;
     background-color: $calendar-main;
-    border: 3px solid $light-titles-bckgnd;
-    padding: 0px 7px;
-    a{
+    border: 3px solid $float-square-bckgnd;
+    padding: 0px 7px; 
+    a {
     text-decoration: none;
     }
 }
 
 .homeContentBlock__calendarBlock__contactBubble__msgText{
-    @include create-cursive-title(unquote("min(2vw, 1rem)"), $header-border);
-    width: max-content;
+    h2{
+        @include create-cursive-title(unquote("min(2vw, 1.5rem)"), $nav-bckgnd);
+        width: max-content;
+    }
 }
 
 @media screen and (max-width: 1280px){
