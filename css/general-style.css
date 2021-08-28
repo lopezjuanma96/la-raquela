@@ -257,11 +257,16 @@
 
 .homeContentBlock__newsSection__navigation__element {
   display: inline-block;
+  position: relative;
   background-color: whitesmoke;
   font-family: 'Amatic SC', sans-serif;
   font-size: x-large;
   color: black;
-  padding: 2px 4px; }
+  padding: 2px 4px;
+  transition: bottom 2s; }
+
+.homeContentBlock__newsSection__navigation__element:hover {
+  bottom: 10%; }
 
 .homeContentBlock__newsSection__content {
   grid-row: 2;
@@ -282,13 +287,16 @@
 
 .homeContentBlock__reelBlock__reelTitle {
   grid-row: 1;
-  position: relative;
-  right: 3%;
-  top: 50%;
-  background-color: green;
-  color: whitesmoke;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: min(2vw, 1.3rem);
+  color: whitesmoke;
+  background-color: green;
+  position: relative;
+  top: 50%;
+  right: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 3px 7px; }
@@ -324,12 +332,16 @@
 
 .homeContentBlock__calendarBlock__title {
   grid-row: 1;
-  position: relative;
-  right: 6%;
-  background-color: green;
+  font-family: "Lobster", cursive;
+  font-size: min(2vw, 1.3rem);
   color: whitesmoke;
-  font-family: 'Lobster', cursive;
-  font-size: min(2vw, 1.5rem);
+  background-color: green;
+  position: relative;
+  top: 0;
+  right: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
   width: fit-content;
   height: fit-content;
   padding: 0px 7px;
@@ -372,9 +384,17 @@
     text-decoration: none; }
 
 .homeContentBlock__calendarBlock__contactBubble__msgText {
-  color: green;
-  font-family: 'Lobster', cursive;
-  font-size: min(2vw, 1rem); }
+  font-family: "Lobster", cursive;
+  font-size: min(2vw, 1rem);
+  color: #075807;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: max-content; }
 
 @media screen and (max-width: 1280px) {
   .homeContentBlock {
