@@ -1,0 +1,15 @@
+@import 'colors';
+@import 'fonts';
+
+@mixin create-cursive-title($size: 1em, $color: black, $bckgnd: transparent, $top: 0, $right: 0, $bottom: 0, $left: 0){
+    font-family: $cursive-title-font;
+    font-size: $size;
+    color: $color;
+    background-color: $bckgnd;
+    position: relative;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    padding: 0% 1%;
+}

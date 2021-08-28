@@ -1,0 +1,313 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); /*animations from https://animate.style/ */
+
+@import 'vars/colors';
+@import 'vars/fonts';
+@import 'vars/mixins';
+
+@import 'calendar-style';
+@import 'contact-style';
+@import 'gallery-style';
+@import 'index-style';
+@import 'info-style';
+@import 'shop-style';
+
+/* TAGS  | -------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $main-bckgnd;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+p {
+    margin-bottom: 0rem; /*against the margin-bottom applied by BS*/
+}
+
+/* CLS | -----------------------------*/
+
+.headerBlock{
+    background-image: url("../imgs/headerBck.png");
+    @if $color-mode == night {
+        background-image: url("../imgs/headerBckNight.png");
+    } @else if $color-mode == grayscale {
+        background-image: url("../imgs/headerBckGray.png");
+    }
+    border-width: 0px 0px 0.2rem 0px;
+    border-style: solid;
+    border-color: $nav-bckgnd;
+    display: grid;
+    grid-template-rows: 4fr 3fr;
+    width: 100%;
+    height: 100%;
+}
+
+.headerBlock__title{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    left: 1%;
+    top: 13%;
+    width: 98%;
+    h1{
+    font-family: $navigator-text-font;
+    font-size: 230%;
+    color: $light-titles;
+    font-weight: bold;
+    }
+}
+
+
+.headerBlock__navigation{
+    position: relative;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    width: 99%;
+    height: fit-content;
+    top: 0.2rem;
+    left: 1%;
+    align-self: flex-end;
+    grid-row: 2;
+}
+
+.headerBlock__navigation__element{
+    background-color: $nav-bckgnd;
+    font-size: 100%;
+    font-family: $navigator-text-font;
+    padding: 2px;
+    display: inline;
+    height: fit-content;
+    align-self: flex-end;
+    margin: 0% unquote("min(0.5%, 3px)");
+    a{
+    color:$nav-not-chosen;
+    text-decoration: none;
+    }
+    a:active{
+    color:gray;
+    }
+}
+
+.headerBlock__navigation__element--choice{
+    background-color: $main-bckgnd;
+    a{
+    color:$nav-chosen;
+    }
+    font-weight: bolder;
+    font-size: 120%;
+    padding: 5px;
+}
+
+.footerBlock{
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("../imgs/footerBck.png");
+    @if $color-mode == night {
+        background-image: url("../imgs/footerBckNight.png");
+    } @else if $color-mode == grayscale{
+        background-image: url("../imgs/footerBckGray.png");
+    }
+    width: 100%;
+    height: 100%;
+    line-height: 1.0; /*to compensate for line-height applied by BS*/
+}
+
+.footerBlock__location{
+    display: inline-grid;
+    grid-template-columns: unquote("min(35%, 150px) 1fr");
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    max-width: 100%;
+}
+
+.footerBlock__location__bckSquare{
+    background-color: $nav-bckgnd;
+    grid-column: 1/3;
+    grid-row: 2;
+    height: 60%;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.footerBlock__location__image{
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(45% at center);
+    transition: width 0.3s;
+}
+
+.footerBlock__location__image:hover{
+    width: 110%;
+}
+
+.footerBlock__location__hereText{
+    grid-column: 2;
+    grid-row: 1;
+    @include create-cursive-title(unquote("min(9vw, 2rem)"), $light-titles);
+    width: fit-content;
+}
+
+.footerBlock__location__addressText{
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    color: $nav-not-chosen;
+    height: fit-content;
+    right: 2%;
+    width: fit-content;
+    font-size: unquote("min(1rem, 5vw)");
+    font-family: $main-text-font;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.footerBlock__location__addressText--clarify{
+    position: relative;
+    right: 4%;
+    color: $nav-not-chosen;
+    text-justify: auto;
+    font-size: unquote("min(0.5rem, 4vw)");
+    font-family: $main-text-font;
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px){
+
+    .footerBlock__location__image{
+        display:none;
+        transition: none;
+    }
+
+}
+
+/*CalendarObject*/
+
+/*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
+
+.calendarObject__month {
+    padding: 5% 6%;
+    width: 98%;
+    background-image: url("../imgs/winter_cabin.png"); /*HERE: esto podría cambiar mes a mes con JS*/
+    background-size: cover;
+    text-align: center;
+    margin: 0% 1%;
+}
+
+.calendarObject__month__name {
+    color: $calendar-main;
+    font-family: $roman-title-font;
+    font-size: unquote("min(4vw, 3em)");
+    text-transform: uppercase;
+    letter-spacing: 2%;
+}
+
+.calendarObject__month__prev {
+    color: $calendar-main;
+    float: left;
+    font-size: unquote("min(2vw, 2em)");
+    padding-top: 10%;
+}
+
+.calendarObject__month__next {
+    color: $calendar-main;
+    float: right;
+    font-size: unquote("min(2vw, 2em)");
+    padding-top: 10%;
+}
+
+.calendarObject__weeks{
+    margin: 1% 0% 0% 0%
+}
+
+.calendarObject__weeks__weekdays {
+    padding: 1% 0;
+    background-color: $calendar-main;
+    ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    }
+    li {
+    width: 13%;
+    font-family: $main-text-font;
+    color: $calendar-day-text;
+    justify-self: center;
+    list-style-type: none;
+    }
+}
+
+.calendarObject__weeks__days {
+    padding: 1% 0% 4% 0%;
+    background-color: $calendar-day-bckgnd;
+    @if $color-mode == grayscale{
+        background-color: $nav-bckgnd;
+    }
+    ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 3%;
+    }
+    li {
+    width: 13%;
+    font-family: $main-text-font;
+    color: $calendar-day-text;
+    justify-self: center;
+    list-style-type: none;
+    }
+}
+
+.calendarObject__weeks__days--choice {
+    padding: 1%;
+    background: $calendar-day-text;
+    color: $calendar-main
+}
+
+@media screen and (max-width: 1280px){
+    .calendarObject__month__prev {
+        font-size: unquote("min(4vw, 3em)");
+        padding-top: 3%;
+    }
+    
+    .calendarObject__month__next {
+        font-size: unquote("min(4vw, 3em)");
+        padding-top: 3%;
+    }
+
+    .calendarObject__month__name {
+        font-size: unquote("max(2rem, 5vw)");
+    }
+
+    .calendarObject__weeks__days {
+        padding: 1% 0% 2% 0%;
+        background-color: $calendar-main;
+    }
+}
+/*End of example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/

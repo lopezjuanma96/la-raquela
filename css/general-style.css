@@ -1,301 +1,921 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*font-family: 'Lobster', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*font-family: 'Roboto', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap'); /*font-family: 'Ubuntu', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');/* font-family: 'Amatic SC', cursive; */
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+/*animations from https://animate.style/ */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/*font-family: 'Lobster', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
+/*font-family: 'Ubuntu', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/*font-family: 'Lobster', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
+/*font-family: 'Ubuntu', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+/* CALENDAR | ----------------------*/
+.calendarBlock {
+  background-color: khaki;
+  background-color: gray;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 98%;
+  height: 92%;
+  margin: 1%; }
 
-@import url('index-style.css');
-@import url('gallery-style.css');
-@import url('calendar-style.css');
-@import url('shop-style.css');
-@import url('info-style.css');
-@import url('contact-style.css');
+.calendarBlock__title {
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: max(3vw, 1em);
+  color: #141313;
+  background-color: whitesmoke;
+  position: relative;
+  top: 15%;
+  right: 1%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 7px; }
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); /*animations from https://animate.style/ */
+.calendarBlock__content {
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  padding: 2%; }
+
+/* CONTACT | ----------------------*/
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 92%;
+  margin: 1%; }
+
+.contactBlock__title {
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(1rem, 4vw);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 15px; }
+
+.contactBlock__grid {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 40fr 40fr;
+  grid-template-rows: 30fr 30fr 30fr;
+  width: 99%;
+  height: 92%;
+  margin: 1% 0.5%; }
+
+.contactBlock__gridElement {
+  display: grid;
+  background-color: white;
+  border: 2px solid darkgrey;
+  border-radius: 10px;
+  height: 94%;
+  width: 98%;
+  grid-template-columns: 20fr 70fr;
+  margin: 0.5% 1%;
+  transition: width 0.5s, margin-left 0.5s; }
+
+.contactBlock__gridElement:hover {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+.contactBlock__gridElement__icon {
+  grid-column: 1;
+  width: 40%;
+  margin-top: 6%;
+  margin-left: 24%; }
+
+.contactBlock__gridElement__text {
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: black; }
+
+.contactBlock__gridElement__text--title {
+  font-size: min(1rem, 3vw); }
+
+.contactBlock__gridElement__text--content {
+  font-size: min(1rem, 2vw); }
+
+.contactFormBlock {
+  margin-bottom: 1%; }
+  .contactFormBlock label {
+    color: black; }
+  .contactFormBlock small {
+    color: gray; }
+  .contactFormBlock button {
+    background-color: gray;
+    border: lightgrey; }
+
+.contactFormBlock__title {
+  font-family: "Lobster", cursive;
+  font-size: min(1rem, 4vw);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 3%;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 0.1rem; }
+
+@media screen and (max-width: 504px) {
+  .contactBlock__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr); }
+  .contactBlock__gridElement__text--title {
+    font-size: max(0.8rem, 3vw); }
+  .contactBlock__gridElement__text--content {
+    font-size: max(0.8rem, 2vw); } }
+
+/* GALLERY | ----------------------*/
+.galleryBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 98%;
+  height: 100%;
+  margin: 1%; }
+
+.galleryReelBlock {
+  background-color: gray;
+  width: 100%;
+  height: 25%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 1% 0%; }
+
+.galleryReel__title {
+  font-family: "Lobster", cursive;
+  font-size: 5vw;
+  color: whitesmoke;
+  background-color: transparent;
+  position: relative;
+  top: 3%;
+  right: 0;
+  bottom: 0;
+  left: 1%;
+  padding: 0% 1%;
+  grid-row: 1;
+  z-index: 4;
+  width: 99%; }
+
+.galleryReel__content {
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  z-index: 2;
+  height: fit-content;
+  margin: 1% 0%; }
+
+.galleryReel__content__element {
+  display: inline-block;
+  min-width: 28px;
+  /*with JS should change the amt of phtoos accodding to width*/
+  width: 15%;
+  max-height: 100%;
+  align-self: center;
+  background-color: whitesmoke; }
+  .galleryReel__content__element img {
+    position: relative;
+    right: 10px;
+    bottom: 10px; }
+
+.carousel {
+  display: none; }
+  .carousel h5 {
+    color: whitesmoke; }
+  .carousel p {
+    color: whitesmoke; }
+
+@media screen and (max-width: 480px) {
+  .galleryBlock {
+    display: none; }
+  .carousel {
+    display: inline-block;
+    width: 90%;
+    margin: 5% 0%;
+    margin-left: 5%; } }
+
+/* HOME | --------------------------------*/
+.homeContentBlock {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 98%;
+  height: 100%;
+  margin: 10% 1%; }
+
+.homeContentBlock__newsBlock {
+  display: inline-grid;
+  align-self: center;
+  grid-template-rows: 1fr 3fr;
+  gap: 1%;
+  background-color: gray;
+  width: 30%;
+  height: 30%;
+  /*HERE: por que no funciona con el porcentaje*/
+  margin: 1%; }
+
+.homeContentBlock__newsTitle {
+  grid-row: 1;
+  color: whitesmoke;
+  align-self: flex-end;
+  font-size: 300%;
+  font-family: 'Amatic SC', cursive;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 3%;
+  margin-left: 3%; }
+
+.homeContentBlock__newsSection {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+  width: 92%;
+  height: 91%;
+  margin: 4%; }
+
+.homeContentBlock__newsSection__navigation {
+  grid-row: 1;
+  width: 100%;
+  height: 100%; }
+
+.homeContentBlock__newsSection__navigation__element {
+  display: inline-block;
+  position: relative;
+  background-color: whitesmoke;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: x-large;
+  color: black;
+  padding: 2px 4px;
+  transition: bottom 2s; }
+
+.homeContentBlock__newsSection__navigation__element:hover {
+  bottom: 10%; }
+
+.homeContentBlock__newsSection__content {
+  grid-row: 2;
+  background-color: white;
+  padding: 2px 4px; }
+
+.homeContentBlock__newsSection__contentText {
+  font-family: 'Ubuntu', sans-serif;
+  color: black; }
+
+.homeContentBlock__reelBlock {
+  display: inline-grid;
+  align-self: center;
+  grid-template-rows: min(2vw, 1.3rem) 1fr;
+  width: 30%;
+  height: 30%;
+  margin: 1%; }
+
+.homeContentBlock__reelBlock__reelTitle {
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(2vw, 1.3rem);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 50%;
+  right: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 7px; }
+
+.homeContentBlock__reelBlock__reel {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%; }
+
+.homeContentBlock__reelBlock__reelElement {
+  display: inline-block;
+  width: 30%;
+  align-self: center; }
+
+.homeContentBlock__reelBlock__reelIcon {
+  grid-row: 2;
+  grid-column: 1;
+  align-self: flex-end;
+  justify-self: flex-end;
+  /*HERE: No se como hacer que quede responsive siempre en la misma posición*/
+  z-index: 1;
+  width: 20%;
+  height: fit-content; }
+
+.homeContentBlock__calendarBlock {
+  /*Si esto se va a poner en todas las paginas se podría generalizar*/
+  display: inline-grid;
+  align-self: center;
+  grid-template-rows: min(2vw, 1.5rem) 6fr 1fr;
+  background-color: darkgrey;
+  width: 30%;
+  height: 100%;
+  margin: 1%; }
+
+.homeContentBlock__calendarBlock__title {
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(2vw, 1.3rem);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 0;
+  right: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 7px;
+  margin-top: 5%; }
+
+.homeContentBlock__calendarBlock__content {
+  grid-row: 2;
+  width: 96%;
+  height: 100%;
+  margin: 2%; }
+
+.homeContentBlock__calendarBlock__contactBubble {
+  grid-row: 3;
+  width: 80%;
+  height: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  position: relative;
+  left: 5%; }
+
+.homeContentBlock__calendarBlock__contactBubble__img {
+  align-self: center;
+  width: 3em;
+  background-color: lightgrey;
+  clip-path: circle(45% at center);
+  position: relative;
+  left: 4%; }
+
+.homeContentBlock__calendarBlock__contactBubble__msg {
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background-color: white;
+  border: 3px solid gray;
+  padding: 0px 7px; }
+  .homeContentBlock__calendarBlock__contactBubble__msg a {
+    text-decoration: none; }
+
+.homeContentBlock__calendarBlock__contactBubble__msgText h2 {
+  font-family: "Lobster", cursive;
+  font-size: min(2vw, 1.5rem);
+  color: lightgrey;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: max-content; }
+
+@media screen and (max-width: 1280px) {
+  .homeContentBlock {
+    flex-direction: column; }
+  .homeContentBlock__newsBlock {
+    display: block f;
+    width: 100%;
+    margin: 2%; }
+  .homeContentBlock__newsTitle {
+    margin-top: 1%;
+    font-size: max(2.8rem, 6vw); }
+  .homeContentBlock__newsSection {
+    width: 88%;
+    margin: 1% 6% 2% 6%; }
+  .homeContentBlock__reelBlock {
+    width: 40%;
+    min-width: 200px; }
+  .homeContentBlock__reelBlock__reelTitle {
+    right: 10%;
+    top: 50%;
+    font-size: max(0.8rem, 2vw); }
+  .homeContentBlock__calendarBlock {
+    width: 100%;
+    height: 30%;
+    display: inline-flex;
+    flex-direction: column; }
+  .homeContentBlock__calendarBlock__title {
+    right: 1%;
+    margin-top: 1%;
+    font-size: max(0.8rem, 2vw); }
+  .homeContentBlock__calendarBlock__contactBubble {
+    position: relative;
+    left: 0%;
+    width: 100%; }
+  .homeContentBlock__calendarBlock__contactBubble__img {
+    left: 2%; }
+  .homeContentBlock__calendarBlock__contactBubble__msgText {
+    font-size: max(0.6rem, 1.5vw); } }
+
+/* INFO | ----------------------------------*/
+.infoBlock {
+  background-image: linear-gradient(to left, red, sandybrown, red);
+  width: 98%;
+  height: fit-content;
+  margin: 5% 1%; }
+
+.infoBlock__contentBlock {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 8fr;
+  width: 100%;
+  height: 100%;
+  background-color: darkgrey; }
+
+.infoBlock__contentBlock__title {
+  grid-row: 1;
+  grid-column: 1/3;
+  font-family: "Lobster", cursive;
+  font-size: min(3rem, 3vw);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 40%;
+  right: 1%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 7px; }
+
+.infoBlock__contentBlock__image {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  margin: 2% 5%; }
+
+.infoBlock__contentBlock__text {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  background-color: lightgrey;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10%;
+  width: 94%;
+  margin: 6% 3%; }
+
+.infoBlock__contentBlock__text--invite {
+  font-size: min(9rem, 3vw);
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  align-self: flex-end; }
+  .infoBlock__contentBlock__text--invite a {
+    text-decoration: none; }
+
+@media screen and (max-width: 400px) {
+  .infoBlock__contentBlock {
+    grid-template-rows: min(3rem, 3vm) 1fr 1fr;
+    grid-template-columns: 1fr; }
+  .infoBlock__contentBlock__title {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: min(3rem, 6vw); }
+  .infoBlock__contentBlock__image {
+    grid-row: 2;
+    grid-column: 1;
+    width: 95%;
+    height: 98%;
+    margin: 2%; }
+  .infoBlock__contentBlock__text {
+    grid-row: 3;
+    grid-column: 1; }
+  .infoBlock__contentBlock__text--invite {
+    font-size: min(9rem, 8vw); } }
+
+/*SHOP | ----------------------------*/
+.shopContentBlock {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 98%;
+  margin: 1%; }
+
+.shopContentBlock__productsBlock {
+  background-color: darkgrey;
+  width: 69%;
+  height: 100%;
+  margin: 0% 0.5%;
+  display: grid;
+  grid-template-rows: auto 1fr; }
+
+.shopContentBlock__productsBlock__title {
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(1rem, 3vw);
+  color: whitesmoke;
+  background-color: lightgrey;
+  position: relative;
+  top: 20%;
+  right: 1%;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 7px; }
+
+.shopContentBlock__productsBlock__grid {
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 98%;
+  height: 100%;
+  margin: 0% 1%; }
+
+.shopContentBlock__productsBlock__gridElement {
+  display: inline-grid;
+  background-color: lightgrey;
+  height: fit-content;
+  width: fit-content;
+  padding: 0% 1%;
+  margin: 1% 0%;
+  grid-template-rows: 7fr 3fr;
+  row-gap: 2%; }
+
+.shopContentBlock__productsBlock__gridElement__image {
+  width: 100%;
+  height: 100%;
+  clip-path: circle(45% at center); }
+
+.shopContentBlock__productsBlock__gridElement__text {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif; }
+  .shopContentBlock__productsBlock__gridElement__text p {
+    color: gray; }
+  .shopContentBlock__productsBlock__gridElement__text b {
+    color: black; }
+
+.shopContentBlock__howToBlock {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  height: fit-content;
+  background-color: lightgrey;
+  margin: 0% 0.5%;
+  padding: 2%;
+  align-self: center; }
+
+.shopContentBlock__howToBlock__title {
+  font-family: "Lobster", cursive;
+  font-size: min(2rem, 3vw);
+  color: gray;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 7px; }
+
+.shopContentBlock__howToBlock__list {
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: fit-content;
+  max-height: 80%;
+  padding: 2%;
+  list-style-position: inside; }
+
+.shopContentBlock__howToBlock__list--sublist {
+  margin-left: 10%;
+  width: 90%; }
+
+.shopCostsTable {
+  width: 98%;
+  height: fit-content;
+  padding: 1% 1%;
+  margin: 1%;
+  background-color: white;
+  border: 2px solid lightgrey; }
+
+.shopCostsTable table {
+  width: 100%; }
+
+.shopCostsTable th {
+  background-color: lightgrey;
+  color: whitesmoke;
+  width: 30%; }
+
+.shopCostsTable tr {
+  background-color: whitesmoke;
+  color: black;
+  width: 30%; }
+
+@media screen and (max-width: 690px) {
+  .shopContentBlock {
+    flex-direction: column; }
+  .shopContentBlock__productsBlock {
+    margin: 0.5% 0%;
+    width: 100%; }
+  .shopContentBlock__productsBlock__title {
+    font-size: min(1rem, 9vw); }
+  .shopContentBlock__howToBlock {
+    margin: 0.5% 0%;
+    width: 100%; }
+  .shopContentBlock__howToBlock__title {
+    font-size: min(2rem, 9vw); }
+  .shopContentBlock__productsBlock__gridElement {
+    row-gap: 2%; } }
 
 /* TAGS  | -------------------------------*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%; }
 
 header {
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-}
+  width: 100%;
+  height: 100%;
+  z-index: 4; }
 
 section {
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
 
 footer {
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-}
+  width: 100%;
+  height: 100%;
+  z-index: 4; }
+
+p {
+  margin-bottom: 0rem;
+  /*against the margin-bottom applied by BS*/ }
 
 /* CLS | -----------------------------*/
+.headerBlock {
+  background-image: url("../imgs/headerBck.png");
+  background-image: url("../imgs/headerBckGray.png");
+  border-width: 0px 0px 0.2rem 0px;
+  border-style: solid;
+  border-color: lightgrey;
+  display: grid;
+  grid-template-rows: 4fr 3fr;
+  width: 100%;
+  height: 100%; }
 
-.headerBlock{
-    background-image: url("../imgs/headerBck.png");
-    border-width: 0px 0px 0.2rem 0px;
-    border-style: solid;
-    border-color: rgb(7, 88, 7);
-    display: grid;
-    grid-template-rows: 4fr 3fr;
-    width: 100%;
-    height: 100%;
-}
-
-.headerBlock__title{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-    left: 1%;
-    top: 13%;
-    width: 98%;
-}
-
-.headerBlock__title h1{
-    font-family: 'Ubuntu', sans-serif;
+.headerBlock__title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: relative;
+  left: 1%;
+  top: 13%;
+  width: 98%; }
+  .headerBlock__title h1 {
+    font-family: "Ubuntu", sans-serif;
     font-size: 230%;
     color: whitesmoke;
-    font-weight: bold;
-}
+    font-weight: bold; }
 
+.headerBlock__navigation {
+  position: relative;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  width: 99%;
+  height: fit-content;
+  top: 0.2rem;
+  left: 1%;
+  align-self: flex-end;
+  grid-row: 2; }
 
-.headerBlock__navigation{
-    position: relative;
-    display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    width: 99%;
-    height: fit-content;
-    top: 0.2rem;
-    left: 1%;
-    align-self: flex-end;
-    grid-row: 2;
-}
-
-.headerBlock__navigation__element{
-    background-color: lightgray;
-    font-size: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 2px;
-    display: inline;
-    height: fit-content;
-    align-self: flex-end;
-    margin: 0% min(0.5%, 3px);
-}
-
-.headerBlock__navigation__element a{
-    color:black;
-    text-decoration: none;
-}
-
-.headerBlock__navigation__element a:active{
-    color:gray;
-}
-
-.headerBlock__navigation__element--choice{
-    background-color: white;
-    font-weight: bolder;
-    font-size: 120%;
-    padding: 5px;
-}
-
-.footerBlock{
-    display: flex;
-    flex-direction: row-reverse;
-    background-image: url("../imgs/footerBck.png");
-    width: 100%;
-    height: 100%;
-}
-
-.footerBlock__location{
-    display: inline-grid;
-    grid-template-columns: min(35%, 150px) 1fr;
-    grid-template-rows: 1fr 3fr;
-    width: 500px;
-    max-width: 100%;
-}
-
-.footerBlock__location__bckSquare{
-    background-color: darkgreen;
-    grid-column: 1/3;
-    grid-row: 2;
-    height: 60%;
-    width: 80%;
-    margin-left: 20%;
-}
-
-.footerBlock__location__image{
-    grid-column: 1;
-    grid-row: 1/3;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(45% at center);
-    transition: width 0.3s;
-}
-
-.footerBlock__location__image:hover{
-    width: 110%;
-}
-
-.footerBlock__location__hereText{
-    grid-column: 2;
-    grid-row: 1;
-    color: whitesmoke;
-    width: fit-content;
-    font-size: min(9vw, 2rem);
-    font-family: 'Lobster', cursive;
-}
-
-.footerBlock__location__addressText{
-    grid-column: 2;
-    grid-row: 2;
-    position: relative;
+.headerBlock__navigation__element {
+  background-color: lightgrey;
+  font-size: 100%;
+  font-family: "Ubuntu", sans-serif;
+  padding: 2px;
+  display: inline;
+  height: fit-content;
+  align-self: flex-end;
+  margin: 0% min(0.5%, 3px); }
+  .headerBlock__navigation__element a {
     color: black;
-    height: fit-content;
-    right: 2%;
-    width: fit-content;
-    font-size: min(1rem, 5vw);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-left: 5%;
-}
+    text-decoration: none; }
+  .headerBlock__navigation__element a:active {
+    color: gray; }
 
-.footerBlock__location__addressText--clarify{
-    position: relative;
-    right: 4%;
-    color: black;
-    text-justify: auto;
-    font-size: min(0.5rem, 4vw);;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
+.headerBlock__navigation__element--choice {
+  background-color: white;
+  font-weight: bolder;
+  font-size: 120%;
+  padding: 5px; }
+  .headerBlock__navigation__element--choice a {
+    color: black; }
 
-@media screen and (max-width:480px){
+.footerBlock {
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: url("../imgs/footerBck.png");
+  background-image: url("../imgs/footerBckGray.png");
+  width: 100%;
+  height: 100%;
+  line-height: 1.0;
+  /*to compensate for line-height applied by BS*/ }
 
-    .footerBlock__location__image{
-        display:none;
-        transition: none;
-    }
+.footerBlock__location {
+  display: inline-grid;
+  grid-template-columns: min(35%, 150px) 1fr;
+  grid-template-rows: 1fr 3fr;
+  width: 500px;
+  max-width: 100%; }
 
-}
+.footerBlock__location__bckSquare {
+  background-color: lightgrey;
+  grid-column: 1/3;
+  grid-row: 2;
+  height: 60%;
+  width: 80%;
+  margin-left: 20%; }
+
+.footerBlock__location__image {
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(45% at center);
+  transition: width 0.3s; }
+
+.footerBlock__location__image:hover {
+  width: 110%; }
+
+.footerBlock__location__hereText {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: "Lobster", cursive;
+  font-size: min(9vw, 2rem);
+  color: whitesmoke;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0% 1%;
+  width: fit-content; }
+
+.footerBlock__location__addressText {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  color: black;
+  height: fit-content;
+  right: 2%;
+  width: fit-content;
+  font-size: min(1rem, 5vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-left: 5%; }
+
+.footerBlock__location__addressText--clarify {
+  position: relative;
+  right: 4%;
+  color: black;
+  text-justify: auto;
+  font-size: min(0.5rem, 4vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+@media screen and (max-width: 480px) {
+  .footerBlock__location__image {
+    display: none;
+    transition: none; } }
 
 /*CalendarObject*/
-
 /*Example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/
-
 .calendarObject__month {
-    padding: 5% 6%;
-    width: 98%;
-    background-image: url("../imgs/winter_cabin.png"); /*HERE: esto podría cambiar mes a mes con JS*/
-    background-size: cover;
-    text-align: center;
-    margin: 0% 1%;
-}
+  padding: 5% 6%;
+  width: 98%;
+  background-image: url("../imgs/winter_cabin.png");
+  /*HERE: esto podría cambiar mes a mes con JS*/
+  background-size: cover;
+  text-align: center;
+  margin: 0% 1%; }
 
 .calendarObject__month__name {
-    color: white;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: min(4vw, 3em);
-    text-transform: uppercase;
-    letter-spacing: 2%;
-}
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: min(4vw, 3em);
+  text-transform: uppercase;
+  letter-spacing: 2%; }
 
 .calendarObject__month__prev {
-    color: white;
-    float: left;
-    font-size: min(2vw, 2em);
-    padding-top: 10%;
-}
+  color: white;
+  float: left;
+  font-size: min(2vw, 2em);
+  padding-top: 10%; }
 
 .calendarObject__month__next {
-    color: white;
-    float: right;
-    font-size: min(2vw, 2em);
-    padding-top: 10%;
-}
+  color: white;
+  float: right;
+  font-size: min(2vw, 2em);
+  padding-top: 10%; }
 
-.calendarObject__weeks{
-    margin: 1% 0% 0% 0%
-}
+.calendarObject__weeks {
+  margin: 1% 0% 0% 0%; }
 
 .calendarObject__weeks__weekdays {
-    padding: 1% 0;
-    background-color: white;
-}
-
-.calendarObject__weeks__weekdays ul {
+  padding: 1% 0;
+  background-color: white; }
+  .calendarObject__weeks__weekdays ul {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.calendarObject__weeks__weekdays li {
+    grid-template-columns: repeat(7, 1fr); }
+  .calendarObject__weeks__weekdays li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
+    font-family: "Roboto", sans-serif;
+    color: #666666;
     justify-self: center;
-    list-style-type: none;
-}
+    list-style-type: none; }
 
 .calendarObject__weeks__days {
-    padding: 1% 0% 4% 0%;
-    background-color: wheat;
-}
-
-.calendarObject__weeks__days ul {
+  padding: 1% 0% 4% 0%;
+  background-color: wheat;
+  background-color: lightgrey; }
+  .calendarObject__weeks__days ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    row-gap: 3%;
-}
-
-.calendarObject__weeks__days li {
+    row-gap: 3%; }
+  .calendarObject__weeks__days li {
     width: 13%;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
+    font-family: "Roboto", sans-serif;
+    color: #666666;
     justify-self: center;
-    list-style-type: none;
-}
+    list-style-type: none; }
 
 .calendarObject__weeks__days--choice {
-    padding: 1%;
-    background: lightgreen;
-    color: white
-}
+  padding: 1%;
+  background: #666666;
+  color: white; }
 
-@media screen and (max-width: 1280px){
-    .calendarObject__month__prev {
-        font-size: min(4vw, 3em);
-        padding-top: 3%;
-    }
-    
-    .calendarObject__month__next {
-        font-size: min(4vw, 3em);
-        padding-top: 3%;
-    }
+@media screen and (max-width: 1280px) {
+  .calendarObject__month__prev {
+    font-size: min(4vw, 3em);
+    padding-top: 3%; }
+  .calendarObject__month__next {
+    font-size: min(4vw, 3em);
+    padding-top: 3%; }
+  .calendarObject__month__name {
+    font-size: max(2rem, 5vw); }
+  .calendarObject__weeks__days {
+    padding: 1% 0% 2% 0%;
+    background-color: white; } }
 
-    .calendarObject__month__name {
-        font-size: max(2rem, 5vw);
-    }
-
-    .calendarObject__weeks__days {
-        padding: 1% 0% 2% 0%;
-        background-color: white;
-    }
-}
 /*End of example calendar taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar*/

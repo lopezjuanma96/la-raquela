@@ -10,8 +10,12 @@
 }
 
 .galleryReelBlock{
-    background-image: url("../imgs/galReelBckHorizontal.png");
-    background-size: cover;
+    @if $color-mode == grayscale {
+        background-color: $float-square-bckgnd;
+    } @else {
+        background-image: url("../imgs/galReelBckHorizontal.png");
+        background-size: cover;
+    }
     width: 100%;
     height: 25%;
     display: grid;
@@ -20,14 +24,9 @@
 }
 
 .galleryReel__title{
-    color: whitesmoke;
-    font-family: 'Lobster', cursive;
-    font-size: 5vw;
+    @include create-cursive-title(5vw, whitesmoke, transparent, $top: 3%, $left: 1%);
     grid-row: 1;
     z-index: 4;
-    position: relative;
-    left: 1%;
-    top: 3%;
     width: 99%;
 }
 
@@ -47,10 +46,23 @@
     min-width: 28px; /*with JS should change the amt of phtoos accodding to width*/
     width: 15%;
     max-height: 100%;
+    align-self: center;
+    background-color: $light-titles;
+    img {
+        position: relative;
+        right: 10px;
+        bottom: 10px;
+    }
 }
 
 .carousel{
     display: none;
+    h5{
+        color: $light-titles
+    }
+    p{
+        color: $light-titles
+    }
 }
 
 @media screen and (max-width: 480px){

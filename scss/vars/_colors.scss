@@ -1,0 +1,75 @@
+$color-mode: grayscale;
+
+$main-bckgnd: null;
+$nav-bckgnd: null;
+$nav-not-chosen: null;
+$nav-chosen: null;
+$float-square-bckgnd: null;
+$float-square-secondary: null;
+$float-square-aux: null;
+$header-border: null;
+$light-titles: null;
+$light-titles-bckgnd: null;
+$dark-titles: null;
+$dark-text: null;
+$dark-text-secondary: null;
+
+@if $color-mode == day{
+    $main-bckgnd: white;
+    $nav-bckgnd: rgb(7, 88, 7);
+    $nav-not-chosen: whitesmoke;
+    $nav-chosen: black;
+    $float-square-bckgnd: darkgreen;
+    $float-square-secondary: lightgray;
+    $float-square-aux: green;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: green;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+    $dark-text-secondary: white;
+} @else if $color-mode == night{
+    $main-bckgnd: rgb(22, 21, 21);
+    $nav-bckgnd: white;
+    $nav-not-chosen: rgb(37, 36, 36);
+    $nav-chosen: whitesmoke;
+    $float-square-bckgnd: darkgreen;
+    $float-square-secondary: khaki;
+    $float-square-aux: rgb(37, 36, 36);
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: green;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: white;
+    $dark-text-secondary: lightgray;
+} @else if $color-mode == christmas{
+    $main-bckgnd: wheat;
+    $nav-bckgnd: brown;
+    $nav-not-chosen: white;
+    $nav-chosen: black;
+    $float-square-bckgnd: rgb(221, 3, 3);
+    $float-square-secondary: brown;
+    $float-square-aux: green;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: green;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+    $dark-text-secondary: white;
+} @else if $color-mode == grayscale{
+    $main-bckgnd: white;
+    $nav-bckgnd: lightgrey;
+    $nav-not-chosen: black;
+    $nav-chosen: black;
+    $float-square-bckgnd: gray;
+    $float-square-secondary: darkgrey;
+    $float-square-aux: lightgrey;
+    $light-titles: whitesmoke;
+    $light-titles-bckgnd: lightgrey;
+    $dark-titles: rgb(20, 19, 19);
+    $dark-text: black;
+    $dark-text-secondary: gray;
+}
+
+$calendar-main: white;
+$calendar-secondary: khaki;
+$calendar-day-text: rgb(102, 102, 102);
+$calendar-day-bckgnd: wheat;
+$calendar-title-bckgnd: whitesmoke;
