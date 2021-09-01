@@ -35,7 +35,8 @@
     width: 98%;
     grid-template-columns: 20fr 70fr;
     margin: 0.5% 1%;
-    transition: width 0.5s, margin-left 0.5s;
+    transition: width 0.5s, 
+    margin-left 0.5s;
 }
 
 .contactBlock__gridElement:hover{
