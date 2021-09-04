@@ -119,8 +119,8 @@
   .contactFormBlock small {
     color: white; }
   .contactFormBlock button {
-    background-color: #dd0303;
-    border: brown; }
+    background-color: darkgreen;
+    border: #075807; }
 
 .contactFormBlock__title {
   font-family: "Lobster", cursive;
@@ -249,7 +249,7 @@
   align-self: center;
   grid-template-rows: 1fr 3fr;
   gap: 1%;
-  background-color: #dd0303;
+  background-color: darkgreen;
   width: 30%;
   height: 30%;
   /*HERE: por que no funciona con el porcentaje*/
@@ -350,7 +350,7 @@
   display: inline-grid;
   align-self: center;
   grid-template-rows: min(2vw, 1.5rem) 6fr 1fr;
-  background-color: brown;
+  background-color: lightgray;
   width: 30%;
   height: 100%;
   margin: 1%; }
@@ -403,7 +403,7 @@
   height: fit-content;
   border-radius: 25px;
   background-color: white;
-  border: 3px solid #dd0303;
+  border: 3px solid darkgreen;
   padding: 0px 7px; }
   .homeContentBlock__calendarBlock__contactBubble__msg a {
     text-decoration: none; }
@@ -411,7 +411,7 @@
 .homeContentBlock__calendarBlock__contactBubble__msgText h2 {
   font-family: "Lobster", cursive;
   font-size: min(2vw, 1.5rem);
-  color: brown;
+  color: #075807;
   background-color: transparent;
   position: relative;
   top: 0;
@@ -472,7 +472,7 @@
   grid-template-columns: 2fr 8fr;
   width: 100%;
   height: 100%;
-  background-color: brown; }
+  background-color: lightgray; }
 
 .infoBlock__contentBlock__title {
   grid-row: 1;
@@ -549,7 +549,7 @@
   margin: 1%; }
 
 .shopContentBlock__productsBlock {
-  background-color: brown;
+  background-color: lightgray;
   width: 69%;
   height: 100%;
   margin: 0% 0.5%;
@@ -649,8 +649,8 @@
   height: fit-content;
   padding: 1% 1%;
   margin: 1%;
-  background-color: wheat;
-  border: 2px solid brown; }
+  background-color: white;
+  border: 2px solid #075807; }
 
 .shopCostsTable table {
   width: 100%; }
@@ -690,7 +690,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: wheat;
+  background-color: white;
   width: 100%;
   height: 100%; }
 
@@ -734,7 +734,7 @@ p {
   background-image: url("../imgs/headerBck.png");
   border-width: 0px 0px 0.2rem 0px;
   border-style: solid;
-  border-color: brown;
+  border-color: #075807;
   display: grid;
   grid-template-rows: 4fr 3fr;
   width: 100%;
@@ -766,7 +766,7 @@ p {
   grid-row: 2; }
 
 .headerBlock__navigation__element {
-  background-color: brown;
+  background-color: #075807;
   font-size: 100%;
   font-family: "Ubuntu", sans-serif;
   padding: 2px;
@@ -775,13 +775,13 @@ p {
   align-self: flex-end;
   margin: 0% min(0.5%, 3px); }
   .headerBlock__navigation__element a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none; }
   .headerBlock__navigation__element a:active {
     color: gray; }
 
 .headerBlock__navigation__element--choice {
-  background-color: wheat;
+  background-color: white;
   font-weight: bolder;
   font-size: 120%;
   padding: 5px; }
@@ -805,7 +805,7 @@ p {
   max-width: 100%; }
 
 .footerBlock__location__bckSquare {
-  background-color: brown;
+  background-color: #075807;
   grid-column: 1/3;
   grid-row: 2;
   height: 60%;
@@ -842,7 +842,7 @@ p {
   grid-column: 2;
   grid-row: 2;
   position: relative;
-  color: white;
+  color: whitesmoke;
   height: fit-content;
   right: 2%;
   width: fit-content;
@@ -855,7 +855,7 @@ p {
   position: relative;
   right: 4%;
   margin-top: 2%;
-  color: white;
+  color: whitesmoke;
   text-justify: auto;
   font-size: min(0.9rem, 3vw);
   font-family: "Roboto", sans-serif;
