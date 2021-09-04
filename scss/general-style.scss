@@ -197,7 +197,7 @@ p {
     height: fit-content;
     right: 2%;
     width: fit-content;
-    font-size: unquote("min(1rem, 5vw)");
+    font-size: unquote("min(1.2rem, 4vw)");
     font-family: $main-text-font;
     font-weight: bold;
     margin-left: 5%;
@@ -206,11 +206,12 @@ p {
 .footerBlock__location__addressText--clarify{
     position: relative;
     right: 4%;
+    margin-top: 2%;
     color: $nav-not-chosen;
     text-justify: auto;
-    font-size: unquote("min(0.5rem, 4vw)");
+    font-size: unquote("min(0.9rem, 3vw)");
     font-family: $main-text-font;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 @media screen and (max-width:480px){

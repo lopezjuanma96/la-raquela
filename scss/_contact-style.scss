@@ -18,54 +18,50 @@
 
 .contactBlock__grid{
     grid-row: 2;
-    display: grid;
-    grid-template-columns: 40fr 40fr;
-    grid-template-rows: 30fr 30fr 30fr;
-    width: 99%;
-    height: 92%;
-    margin: 1% 0.5%;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    margin: 0.5% 5%;
+    justify-content: space-evenly;
 }
 
 .contactBlock__gridElement{
-    display: grid;
-    background-color: white;
-    border: 2px solid $float-square-secondary;
-    border-radius: 10px;
-    height: 94%;
-    width: 98%;
-    grid-template-columns: 20fr 70fr;
-    margin: 0.5% 1%;
-    transition: width 0.5s, 
-    margin-left 0.5s;
-}
-
-.contactBlock__gridElement:hover{
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
 }
 
 .contactBlock__gridElement__icon{
-    grid-column: 1;
-    width: 40%;
-    margin-top: 6%;
-    margin-left: 24%;
+    opacity: 0.8;
+    width: 100%;
+    align-self: center;
+    transition: transform 0.8s;
 }
 
 .contactBlock__gridElement__text{
-    grid-column: 2;
-    height: 100%;
-    width: 100%;
+    opacity: 0;
     font-family: $main-text-font;
-    color: black;
+    width: 100%;
+    text-align: center;
+    color: $dark-text;
+    transition: opacity 0.5s, transform 0.8s;
+}
+
+.contactBlock__gridElement:hover .contactBlock__gridElement__icon{
+    transform: translateY(-0.5rem)
+}
+
+.contactBlock__gridElement:hover .contactBlock__gridElement__text{
+    opacity: 1;
+    transform: translateY(0.3rem)
 }
 
 .contactBlock__gridElement__text--title{
-    font-size: unquote("min(1rem, 3vw)");
+    font-size: unquote("min(1rem, 2vw)");
 }
 
 .contactBlock__gridElement__text--content{
-    font-size: unquote("min(1rem, 2vw)");
+    font-size: unquote("min(1rem, 1vw)");
 }
 
 .contactFormBlock{
@@ -83,7 +79,7 @@
 }
 
 .contactFormBlock__title{
-    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd, $left: 3%);
+    @include create-cursive-title(unquote("min(1rem, 4vw)"), $light-titles, $light-titles-bckgnd);
     width: fit-content;
     height: fit-content;
     padding: 0px 0.1rem;
@@ -92,8 +88,35 @@
 @media screen and (max-width: 504px){
 
     .contactBlock__grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        flex-direction: column;
+        width: 90%;
+        margin: 0.5% 5%;
+    }
+    
+    .contactBlock__gridElement{
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    
+    .contactBlock__gridElement__icon{
+        width: 30%;
+        transform: translateX(6rem)
+    }
+    
+    .contactBlock__gridElement__text{
+        width: 70%;
+        text-align: left;
+        transition: transform 0.8s, opacity 1s;
+    }
+    
+    .contactBlock__gridElement:hover .contactBlock__gridElement__icon{
+        transform: translateX(-0.3rem)
+    }
+    
+    .contactBlock__gridElement:hover .contactBlock__gridElement__text{
+        opacity: 1;
+        transform: translateX(2rem)
     }
 
     .contactBlock__gridElement__text--title{
