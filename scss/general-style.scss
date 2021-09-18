@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     background-color: $main-bckgnd;
@@ -29,7 +29,7 @@ body {
 
 header {
     width: 100%;
-    height: 100%;
+    height: 95px;
     z-index: 4;
     position: relative;
     animation: load-descend 1s ease-out 0s normal 1 both running;
@@ -42,16 +42,16 @@ header {
 
 section {
     width: 100%;
-    height: 100%;
+    min-height: calc(100% - 200px);
+    height: fit-content;
     z-index: 2;
 }
 
 footer {
     width: 100%;
-    height: 100%;
+    height: 155px;
     z-index: 4;
     position: relative;
-    animation: load-ascend 1s ease-out 0.4s normal 1 both running;
 }
 
 @keyframes load-ascend {
