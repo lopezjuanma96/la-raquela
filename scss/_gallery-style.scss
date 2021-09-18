@@ -10,7 +10,7 @@
 
 .galleryReelBlock{
     @if $color-mode == grayscale {
-        background-color: $float-square-bckgnd;
+        background-color: $palette-primary-light;
     } @else {
         background-image: url("../imgs/galReelBckHorizontal.png");
         background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .galleryReel__title{
-    @include create-cursive-title(5vw, whitesmoke, transparent, $top: 3%, $left: 1%);
+    @include create-cursive-title(5vw, $palette-primary-main-font, transparent, $top: 3%, $left: 1%);
     grid-row: 1;
     z-index: 4;
     width: 99%;
@@ -46,7 +46,7 @@
     width: 15%;
     max-height: 100%;
     align-self: center;
-    background-color: $light-titles;
+    background-color: $palette-last-light;
     img {
         position: relative;
         right: 10px;
@@ -57,10 +57,10 @@
 .carousel{
     display: none;
     h5{
-        color: $light-titles
+        color: $palette-primary-main-font
     }
     p{
-        color: $light-titles
+        color: $palette-primary-main-font
     }
 }
 

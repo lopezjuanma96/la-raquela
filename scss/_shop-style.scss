@@ -8,7 +8,7 @@
 }
 
 .shopContentBlock__productsBlock{
-    background-color: $float-square-secondary;
+    background-color: $palette-primary-light;
     width: 69%;
     height: 100%;
     margin: 0% 0.5%;
@@ -18,7 +18,7 @@
 
 .shopContentBlock__productsBlock__title{
     grid-row: 1;
-    @include create-cursive-title(unquote("min(1rem, 3vw)"), $light-titles, $light-titles-bckgnd, 20%, 1%);
+    @include create-cursive-title(unquote("min(1rem, 3vw)"), $palette-primary-main-font, $palette-primary-main, 20%, 1%);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
@@ -37,7 +37,7 @@
 
 .shopContentBlock__productsBlock__gridElement{
     display: inline-grid;
-    background-color: $float-square-aux;
+    background-color: $palette-last-light;
     height: fit-content;
     width: fit-content;
     padding: 0% 1%;
@@ -57,10 +57,13 @@
     height: 100%;
     font-family: 'Roboto', sans-serif;
     p {
-        color: $dark-text-secondary;
+        color: $palette-last-light-font;
+        margin-bottom:7%;
     }
     b {
-        color: $dark-text;
+        background-color: $palette-secondary-dark;
+        color: $palette-secondary-dark-font;
+        padding: 1%;
     }
 }
 
@@ -69,21 +72,21 @@
     flex-direction: column;
     width: 29%;
     height: fit-content;
-    background-color: $float-square-aux;
+    background-color: $palette-last-dark;
     margin: 0% 0.5%;
     padding: 2%;
     align-self: center;
 }
 
 .shopContentBlock__howToBlock__title{
-    @include create-cursive-title(unquote("min(2rem, 3vw)"), $dark-text-secondary);
+    @include create-cursive-title(unquote("min(2rem, 3vw)"), $palette-last-dark-font);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
 }
 
 .shopContentBlock__howToBlock__list{
-    background-color: whitesmoke;
+    background-color: $palette-last-light;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: fit-content;
@@ -102,8 +105,8 @@
     height: fit-content;
     padding: 1% 1%;
     margin: 1%;
-    background-color: $main-bckgnd;
-    border: 2px solid $nav-bckgnd;
+    background-color: $palette-last-light;
+    border: 2px solid $palette-last-dark;
 }
 
 .shopCostsTable table{
@@ -111,14 +114,14 @@
 }
 
 .shopCostsTable th {
-    background-color: $float-square-aux;
-    color: whitesmoke;
+    background-color: $palette-last-dark;
+    color: $palette-last-dark-font;
     width: 30%;
 }
 
 .shopCostsTable tr {
-    background-color: whitesmoke;
-    color:black;
+    background-color: $palette-last-main;
+    color: $palette-last-main-font;
     width: 30%;
 }
 @media screen and (max-width: 690px){
