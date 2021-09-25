@@ -185,7 +185,7 @@ p {
 .footerBlock__location__hereText{
     grid-column: 2;
     grid-row: 1;
-    @include create-cursive-title(unquote("min(9vw, 2rem)"), $palette-primary-main-font);
+    @include create-cursive-title(unquote("min(9vw, 2rem)"), $palette-primary-main-font, $top: 90%);
     width: fit-content;
 }
 
@@ -195,14 +195,14 @@ p {
     position: relative;
     color: $palette-primary-dark-font;
     height: fit-content;
+    top: 30%;
     right: 2%;
     width: fit-content;
     font-size: unquote("min(1.2rem, 4vw)");
     font-family: $main-text-font;
-    font-weight: bold;
     margin-left: 5%;
 }
-
+/*
 .footerBlock__location__addressText--clarify{
     position: relative;
     right: 4%;
@@ -213,7 +213,7 @@ p {
     font-family: $main-text-font;
     font-weight: normal;
 }
-
+*/
 @media screen and (max-width:480px){
 
     .footerBlock__location__image{

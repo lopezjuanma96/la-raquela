@@ -978,7 +978,7 @@ p {
   color: #f8fdff;
   background-color: transparent;
   position: relative;
-  top: 0;
+  top: 90%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -991,23 +991,25 @@ p {
   position: relative;
   color: #f8fdff;
   height: fit-content;
+  top: 30%;
   right: 2%;
   width: fit-content;
   font-size: min(1.2rem, 4vw);
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   margin-left: 5%; }
 
-.footerBlock__location__addressText--clarify {
-  position: relative;
-  right: 4%;
-  margin-top: 2%;
-  color: #f8fdff;
-  text-justify: auto;
-  font-size: min(0.9rem, 3vw);
-  font-family: "Roboto", sans-serif;
-  font-weight: normal; }
-
+/*
+.footerBlock__location__addressText--clarify{
+    position: relative;
+    right: 4%;
+    margin-top: 2%;
+    color: $palette-primary-dark-font;
+    text-justify: auto;
+    font-size: unquote("min(0.9rem, 3vw)");
+    font-family: $main-text-font;
+    font-weight: normal;
+}
+*/
 @media screen and (max-width: 480px) {
   .footerBlock__location__image {
     display: none;
