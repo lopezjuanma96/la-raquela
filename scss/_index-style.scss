@@ -75,10 +75,14 @@
 .homeContentBlock__reelBlock{
     display: inline-grid;
     align-self: center;
+    background-color: $palette-secondary-main;
+    border-radius: 50%;
+    border-color: $palette-secondary-main;
     grid-template-rows: unquote("min(2vw, 1.3rem) 1fr");
     width: 30%;
     height: 30%;
     margin: 1%;
+    padding: 9% 0%;
 }
 
 .homeContentBlock__reelBlock__reelTitle{
@@ -202,6 +206,7 @@
     .homeContentBlock__reelBlock{
         width: 40%;
         min-width: 200px;
+        padding: 12% 0%;
     }
 
     .homeContentBlock__reelBlock__reelTitle{

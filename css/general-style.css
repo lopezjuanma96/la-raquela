@@ -448,10 +448,14 @@
 .homeContentBlock__reelBlock {
   display: inline-grid;
   align-self: center;
+  background-color: #ffd54f;
+  border-radius: 50%;
+  border-color: #ffd54f;
   grid-template-rows: min(2vw, 1.3rem) 1fr;
   width: 30%;
   height: 30%;
-  margin: 1%; }
+  margin: 1%;
+  padding: 9% 0%; }
 
 .homeContentBlock__reelBlock__reelTitle {
   grid-row: 1;
@@ -580,7 +584,8 @@
     margin: 1% 6% 2% 6%; }
   .homeContentBlock__reelBlock {
     width: 40%;
-    min-width: 200px; }
+    min-width: 200px;
+    padding: 12% 0%; }
   .homeContentBlock__reelBlock__reelTitle {
     right: 10%;
     top: 50%;
