@@ -175,8 +175,8 @@
   grid-row: 1;
   font-family: "Lobster", cursive;
   font-size: max(3vw, 1em);
-  color: #f8fdff;
-  background-color: #546e7a;
+  color: #070200;
+  background-color: #ffd54f;
   position: relative;
   top: 15%;
   right: 1%;
@@ -536,7 +536,7 @@
 .homeContentBlock__calendarBlock__contactBubble__img {
   align-self: center;
   width: 3em;
-  background-color: #29434e;
+  background-color: #003d00;
   clip-path: circle(45% at center);
   position: relative;
   left: 4%; }
@@ -546,8 +546,8 @@
   width: fit-content;
   height: fit-content;
   border-radius: 25px;
-  background-color: #546e7a;
-  border: 3px solid #29434e;
+  background-color: #33691e;
+  border: 3px solid #003d00;
   padding: 0px 7px; }
   .homeContentBlock__calendarBlock__contactBubble__msg a {
     text-decoration: none; }
@@ -616,7 +616,7 @@
   grid-template-columns: 2fr 8fr;
   width: 100%;
   height: 100%;
-  background-color: #819ca9; }
+  background-color: #ffd54f; }
 
 .infoBlock__contentBlock__title {
   grid-row: 1;
@@ -657,11 +657,12 @@
 
 .infoBlock__contentBlock__text--invite {
   font-size: min(9rem, 3vw);
-  color: #070200;
+  color: #c8a415;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
   align-self: flex-end; }
   .infoBlock__contentBlock__text--invite a {
+    color: #070200;
     text-decoration: none; }
 
 @media screen and (max-width: 400px) {
@@ -748,7 +749,7 @@
     color: #070200;
     margin-bottom: 7%; }
   .shopContentBlock__productsBlock__gridElement__text b {
-    background-color: #29434e;
+    background-color: #9499b7;
     color: #f8fdff;
     padding: 1%; }
 

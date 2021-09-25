@@ -152,7 +152,7 @@
 .homeContentBlock__calendarBlock__contactBubble__img{
     align-self: center;
     width: 3em;
-    background-color: $palette-secondary-dark;
+    background-color: $palette-primary-dark;
     clip-path: circle(45% at center);
     position:relative;
     left: 4%;
@@ -163,8 +163,8 @@
     width: fit-content;
     height: fit-content;
     border-radius: 25px;
-    background-color: $palette-secondary-main;
-    border: 3px solid $palette-secondary-dark;
+    background-color: $palette-primary-main;
+    border: 3px solid $palette-primary-dark;
     padding: 0px 7px; 
     a {
     text-decoration: none;
@@ -173,7 +173,7 @@
 
 .homeContentBlock__calendarBlock__contactBubble__msgText{
     h2{
-        @include create-cursive-title(unquote("min(2vw, 1.5rem)"), $palette-secondary-main-font);
+        @include create-cursive-title(unquote("min(2vw, 1.5rem)"), $palette-primary-main-font);
         width: max-content;
     }
 }

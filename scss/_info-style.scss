@@ -13,7 +13,7 @@
     grid-template-columns: 2fr 8fr;
     width: 100%;
     height: 100%;
-    background-color: $palette-secondary-light;
+    background-color: $palette-secondary-main;
 }
 
 .infoBlock__contentBlock__title{
@@ -49,12 +49,13 @@
 
 .infoBlock__contentBlock__text--invite{
     font-size: unquote("min(9rem, 3vw)");
-    color: $palette-last-light-font;
+    color: $palette-secondary-dark;
     font-family: $roman-title-font;
     font-weight: bolder;
     align-self: flex-end;
     a{
-    text-decoration: none;
+        color: $palette-last-light-font;
+        text-decoration: none;
     }
 }
 
