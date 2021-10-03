@@ -36,25 +36,22 @@
 }
 
 .shopContentBlock__productsBlock__gridElement{
-    display: inline-grid;
+    display: inline-block;
     background-color: $palette-last-light;
-    height: fit-content;
-    width: fit-content;
+    width: 20%;
     padding: 0% 1%;
-    margin: 1% 0%;
-    grid-template-rows: 7fr 3fr;
+    margin: 1% 1%;
     row-gap: 2%;
 }
 
 .shopContentBlock__productsBlock__gridElement__image{
     width: 100%;
-    height: 100%;
+    margin-bottom: 5%;
     clip-path: circle(45% at center);
 }
 
 .shopContentBlock__productsBlock__gridElement__text{
     width: 100%;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     p {
         color: $palette-last-light-font;
@@ -63,7 +60,7 @@
     b {
         background-color: $palette-last-dark;
         color: $palette-last-dark-font;
-        padding: 1%;
+        padding: 1% 3%;
     }
 }
 
