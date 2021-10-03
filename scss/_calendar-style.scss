@@ -1,9 +1,9 @@
 /* CALENDAR | ----------------------*/
 
 .calendarBlock{
-    background-color: $calendar-secondary;
+    background-color: $palette-last-main;
     @if $color-mode == grayscale{
-        background-color: $float-square-bckgnd;
+        background-color: $palette-last-main;
     }
     display: grid;
     grid-template-rows: auto 1fr;
@@ -13,7 +13,7 @@
 
 .calendarBlock__title{
     grid-row: 1;
-    @include create-cursive-title(unquote("max(3vw, 1em)"), $dark-titles, $calendar-title-bckgnd, 15%, 1%);
+    @include create-cursive-title(unquote("max(3vw, 1em)"), $palette-secondary-main-font, $palette-secondary-main, 15%, 1%);
     width: fit-content;
     height: fit-content;
     padding: 0px 7px;
